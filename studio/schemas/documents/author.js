@@ -43,6 +43,28 @@ export default {
           }
         }
       ]
+    },{
+      name: 'studier',
+      title: 'Studier',
+      type: 'table', // Specify 'table' type
+    },
+
+      {
+      name: 'utstallningar',
+      title: 'Utställningar',
+      type: 'table', // Specify 'table' type
+    },
+
+      {
+      name: 'publikationer',
+      title: 'Publikationer',
+      type: 'table', // Specify 'table' type
+    },
+
+      {
+      name: 'stipendier',
+      title: 'Stipendier',
+      type: 'table', // Specify 'table' type
     },
     {
       name: 'bio',
