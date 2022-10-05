@@ -12,6 +12,7 @@ import post from './documents/post'
 // Object types
 import portableText from './objects/portableText'
 import authorReference from './objects/authorReference'
+import youtube from './objects/youtube'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -30,5 +31,6 @@ export default createSchema({
     // { type: 'typename' } in other document schemas
     portableText,
     authorReference,
+youtube,
   ])
 })
