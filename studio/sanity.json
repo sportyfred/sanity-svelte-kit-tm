@@ -18,7 +18,10 @@
     "dashboard-widget-netlify",
     "@sanity/code-input",
     "asset-source-unsplash",
-    "table"
+    "table",
+    "@sanity/color-input",
+    "asset-source-fiona-placeholder",
+    "pdf-generator"
   ],
   "env": {
     "development": {

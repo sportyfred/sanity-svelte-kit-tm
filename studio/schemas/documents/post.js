@@ -36,6 +36,13 @@ export default {
       title: 'Main image'
     },
     {
+  name: "fiona",
+  type: "image",
+  options: {
+    sources: [FionaPlaceholder]
+  }
+},
+    {
       name: 'authors',
       title: 'Authors',
       type: 'array',

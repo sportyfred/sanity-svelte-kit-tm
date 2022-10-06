@@ -4,6 +4,12 @@ import createSchema from 'part:@sanity/base/schema-creator'
 // Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
+import FionaPlaceholder from 'part:sanity-plugin-asset-source/fiona-placeholder'
+
+import ColorPicker from 'sanity-color-picker/lib'
+
+
+
 // document schemas
 import author from './documents/author'
 import category from './documents/category'
@@ -25,6 +31,8 @@ export default createSchema({
     post,
     category,
     author,
+    frontpage,
+    siteSettings,
 
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
