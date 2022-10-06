@@ -45,6 +45,7 @@ export default {
     ]
   }
 },
+{
  title: "Color Picker",
   name: "colorpicker",
   type: "string",
@@ -60,5 +61,6 @@ export default {
       { title: "White", value: "#fff" }
     ]
   }
+}
   ]
 }
