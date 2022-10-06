@@ -6,7 +6,7 @@
   "author": "Sanity <hello@sanity.io>",
   "scripts": {
     "dev": "sanity start",
-    "build": "sanity build && npm run copy-redirects",
+    "build": "sanity build && yarn run copy-redirects",
     "copy-redirects": "cpy _redirects dist",
     "graphql-deploy": "sanity graphql deploy --playground",
     "test": "sanity check"
