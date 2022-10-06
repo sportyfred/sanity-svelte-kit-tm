@@ -1,3 +1,7 @@
+
+
+import ColorPicker from 'sanity-color-picker/lib'
+
 export default {
   name: 'siteSettings',
   type: 'document',

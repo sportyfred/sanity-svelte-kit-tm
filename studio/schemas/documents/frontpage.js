@@ -24,9 +24,9 @@ export default {
       title: 'Image'
     },
     {
-      name: 'bio',
-      type: 'bioPortableText',
-      title: 'Text'
+      name: 'body',
+      title: 'Post body',
+      type: 'portableText',
     }
   ],
   preview: {

@@ -1,5 +1,7 @@
 import {DocumentIcon} from '@sanity/icons'
 
+import FionaPlaceholder from 'part:sanity-plugin-asset-source/fiona-placeholder'
+
 export default {
   name: 'post',
   type: 'document',
@@ -36,7 +38,7 @@ export default {
       title: 'Main image'
     },
     {
-  name: "fiona",
+  name: "name",
   type: "image",
   options: {
     sources: [FionaPlaceholder]
