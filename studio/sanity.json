@@ -22,7 +22,7 @@
     "@sanity/color-input",
     "asset-source-fiona-placeholder",
     "pdf-generator",
-    "sanity-plugin-color-picker",
+    "color-picker",
     "color-list"
   ],
   "env": {
