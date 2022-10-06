@@ -15,6 +15,10 @@ import author from './documents/author'
 import category from './documents/category'
 import post from './documents/post'
 
+import siteSettings from './documents/siteSettings'
+
+import frontpage from './documents/frontpage'
+
 // Object types
 import portableText from './objects/portableText'
 import authorReference from './objects/authorReference'
