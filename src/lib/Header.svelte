@@ -3,7 +3,7 @@
 </script>
 
 <script>
-  export let blogTitle = 'My Blog'
+  export let blogTitle = 'tm'
 
   let path
   $: ({pathname} = $page)
@@ -26,7 +26,7 @@
   }
   a[data-selected='true'] {
     font-weight: 600;
-    color: #555;
+   
   }
   a {
     text-decoration: none;
