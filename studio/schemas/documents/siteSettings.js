@@ -29,11 +29,7 @@ export default {
         layout: 'tags'
       }
     },
-     {
-      name: 'favoriteColor',
-      title: 'Favorite color',
-      type: 'color'
-    },
+    
     {
   title: "Color List",
   description: "Pick a color",
