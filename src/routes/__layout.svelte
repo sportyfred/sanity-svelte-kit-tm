@@ -1,9 +1,10 @@
 <script>
   import Header from '$lib/Header.svelte'
   import Footer from '$lib/Footer.svelte'
+ /* import '$lib/tailwind.css' */
 </script>
 
-<Header blogTitle={'SvelteKit x Sanity Blog'} />
+<Header blogTitle={'tm'} />
 
 <main style="padding: 1em">
   <slot />
@@ -11,8 +12,7 @@
 
 <Footer />
 
-<style>
-  /* this template uses VanillaCSS: https://vanillacss.com/ */
+<style>/* this template uses VanillaCSS: https://vanillacss.com/ */
   /* you can use the values below to create your own theme colors  */
 
   /* Default Variables */

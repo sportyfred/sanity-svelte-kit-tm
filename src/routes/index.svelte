@@ -9,7 +9,7 @@
 <svelte:head>
   <title>Blog</title>
 </svelte:head>
-
+<div class="card">
 <h1>Recent posts</h1>
 
 <PostsGrid {posts} />
@@ -19,3 +19,5 @@
 {#each authors as author}
   <AuthorCard {author} />
 {/each}
+
+</div>

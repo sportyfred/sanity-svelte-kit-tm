@@ -35,7 +35,10 @@ export default {
     {
       name: 'image',
       type: 'image',
-      title: 'Main image'
+      title: 'Main image',
+       options: {
+    hotspot : true
+  }
     },
     {
   name: "name",

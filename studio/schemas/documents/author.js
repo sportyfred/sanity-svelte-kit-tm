@@ -66,27 +66,12 @@ export default {
       title: 'Stipendier',
       type: 'table', // Specify 'table' type
     },
-    {
+  {
       name: 'bio',
-      type: 'array',
-      title: 'Biography',
-      of: [
-        {
-          type: 'block',
-          title: 'Block',
-          // Only allow paragraphs to be written in the bio
-          styles: [{title: 'Normal', value: 'normal'}],
-          lists: [],
-          marks: {
-            decorators: [
-              {title: 'Strong', value: 'strong'},
-              {title: 'Emphasis', value: 'em'},
-              {title: 'Code', value: 'code'}
-            ]
-          }
-        }
-      ]
-    }
+      type: 'bioPortableText',
+      title: 'Biography'
+    },
+    
   ],
   preview: {
     select: {
