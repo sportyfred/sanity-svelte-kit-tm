@@ -19,11 +19,11 @@
   :root {
     --desktop-font-size: 1.2rem/1.5;
     --mobile-font-size: 1rem/1.4;
-    --text-color: #darkgreen;
-    --link-color: darkblue;
+    --text-color: darkgreen;
+    --link-color: green;
     --link-color-alt: #1d5dc1;
     --primary-color: #fffff0;
-    --secondary-color: aliceblue;
+    --secondary-color: teal;
     --tertiary-color: whitesmoke;
   }
   /* Linked Header Colors */
