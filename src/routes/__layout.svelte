@@ -19,10 +19,10 @@
   :root {
     --desktop-font-size: 1.2rem/1.5;
     --mobile-font-size: 1rem/1.4;
-    --text-color: #2d2d2d;
+    --text-color: #darkgreen;
     --link-color: darkblue;
     --link-color-alt: #1d5dc1;
-    --primary-color: lightsteelblue;
+    --primary-color: #fffff0;
     --secondary-color: aliceblue;
     --tertiary-color: whitesmoke;
   }
@@ -44,7 +44,7 @@
       --tertiary-color: #121923;
     }
     :global(body) {
-      background: #121923;
+      background: #fffff0;
     }
   }
 </style>
