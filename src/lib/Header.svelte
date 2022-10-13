@@ -3,7 +3,7 @@
 </script>
 
 <script>
-  export let blogTitle = 'My Blog'
+  export let blogTitle = 'tm'
 
   let path
   $: ({pathname} = $page)
@@ -14,6 +14,7 @@
   <nav>
     <ul>
       <li><a data-selected={pathname === '/'} href="/">home</a></li>
+          <li><a data-selected={pathname === '/about'} href="/about">about</a></li>
     </ul>
   </nav>
 </header>
@@ -26,7 +27,7 @@
   }
   a[data-selected='true'] {
     font-weight: 600;
-    color: #555;
+   
   }
   a {
     text-decoration: none;
