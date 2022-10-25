@@ -10,16 +10,17 @@
 </script>
 
 <header>
-  <span>{blogTitle}</span>
+  <span><h1 style="border-bottom: 0px;">{blogTitle}</h1></span>
   <nav>
     <ul>
       <li><a data-selected={pathname === '/'} href="/">home</a></li>
-          <li><a data-selected={pathname === '/about'} href="/about">about</a></li>
+          <li><a data-selected={pathname === '/authors/tove-moeller'} href="/authors/tove-moeller">about</a></li>
     </ul>
   </nav>
 </header>
 
 <style>
+
   ul {
     list-style: none;
     margin: 0;

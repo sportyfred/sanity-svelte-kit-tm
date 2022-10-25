@@ -4,7 +4,7 @@
   export let author
 </script>
 
-{#if author?.name}
+{#if author.name}
   <a href="/authors/{author.slug.current}">
     <span>
       <SanityImage image={author.image} maxWidth={40} />

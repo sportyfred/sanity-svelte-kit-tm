@@ -4,6 +4,7 @@
  /* import '$lib/tailwind.css' */
 </script>
 
+
 <Header blogTitle={'tm'} />
 
 <main style="padding: 1em">
@@ -16,7 +17,10 @@
   /* you can use the values below to create your own theme colors  */
 
   /* Default Variables */
+
+ 
   :root {
+   
     --desktop-font-size: 1.2rem/1.5;
     --mobile-font-size: 1rem/1.4;
     --text-color: darkgreen;
@@ -45,6 +49,8 @@
     }
     :global(body) {
       background: #fffff0;
+
     }
+
   }
 </style>
