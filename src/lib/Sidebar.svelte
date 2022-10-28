@@ -11,7 +11,7 @@ $: pathname = $page.url.pathname;
  
 
 </script>
-
+{JSON.stringify(pathname)}
 <nav>
     <ul>
       <li><a data-selected={pathname === '/'} href="/">home</a></li>
