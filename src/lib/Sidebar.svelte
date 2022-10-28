@@ -14,8 +14,8 @@ $: ({pathname} = $page.url.pathname)
 {JSON.stringify(pathname)}
 <nav>
     <ul>
-      <li><a data-selected={pathname === '/'} href="/">home</a></li>
-          <li><a data-selected={pathname === '/authors/tove-moeller'} href="/authors/tove-moeller">about</a></li>
+      <li class={pathname === '/' ? 'active' : ''}><a href="/">home</a></li>
+       <li class={pathname === '/authors/tove-moeller' ? 'active' : ''}><a href="/authors/tove-moeller">about</a></li>
     </ul>
   </nav>
 
@@ -25,12 +25,7 @@ $: ({pathname} = $page.url.pathname)
     margin: 0;
     padding: 0;
   }
-  a[data-selected='true'] {
-    font-weight: 600;
-     text-decoration: underline;
-  text-decoration-color: darkgreen;
-    text-decoration-style: wavy;
-  }
+ 
   a {
     
     display: block;
@@ -46,6 +41,13 @@ $: ({pathname} = $page.url.pathname)
     
   }
 li{ display:inline-block; padding: 1rem;}
+
+li.active a {
+    font-weight: 600;
+     text-decoration: underline;
+  text-decoration-color: darkgreen;
+    text-decoration-style: wavy;
+  }
 
   nav {
     display: flex;
