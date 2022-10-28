@@ -47,6 +47,8 @@ export default {
     sources: [FionaPlaceholder]
   }
 },
+
+
     {
       name: 'authors',
       title: 'Authors',

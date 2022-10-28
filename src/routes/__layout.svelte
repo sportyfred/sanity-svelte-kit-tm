@@ -1,17 +1,27 @@
+
 <script>
   import Header from '$lib/Header.svelte'
   import Footer from '$lib/Footer.svelte'
- /* import '$lib/tailwind.css' */
+   import Sidebar from '$lib/Sidebar.svelte'
+  
+
+
 </script>
 
 
-<Header blogTitle={'tm'} />
 
-<main style="padding: 1em">
-  <slot />
-</main>
+ 
+
+ <Header blogTitle={'tm'} />
+<Sidebar />
+  <main style="padding: 1em"><slot /></main>
+
 
 <Footer />
+
+
+
+
 
 <style>/* this template uses VanillaCSS: https://vanillacss.com/ */
   /* you can use the values below to create your own theme colors  */
@@ -24,8 +34,8 @@
     --desktop-font-size: 1.2rem/1.5;
     --mobile-font-size: 1rem/1.4;
     --text-color: darkgreen;
-    --link-color: green;
-    --link-color-alt: #1d5dc1;
+    --link-color: darkgreen;
+    --link-color-alt: green;
     --primary-color: #fffff0;
     --secondary-color: teal;
     --tertiary-color: whitesmoke;
@@ -53,4 +63,9 @@
     }
 
   }
+
+
+
+ 
+
 </style>

@@ -28,6 +28,10 @@
   "type": "module",
   "dependencies": {
     "@sanity/client": "^3.3.0",
-    "@sanity/image-url": "^1.0.1"
+    "@sanity/image-url": "^1.0.1",
+    "get-youtube-id": "^1.0.1",
+    "svelte-fluid-layout": "^0.2.0",
+    "svelte-layouts": "^0.9.6",
+    "svelte-youtube": "^0.0.2"
   }
 }
