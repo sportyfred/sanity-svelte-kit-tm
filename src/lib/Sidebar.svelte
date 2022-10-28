@@ -11,7 +11,7 @@ $: pathname = $page.url.pathname;
  
 
 </script>
-{JSON.stringify(pathname)}
+
 <nav>
     <ul>
       <li class={pathname === '/' ? 'active' : ''}><a href="/">home</a></li>
@@ -31,21 +31,21 @@ $: pathname = $page.url.pathname;
     display: block;
       text-align: center;
 
- 
+ text-decoration: none;
 
   }
 
   a:hover { 
-  text-decoration: underline;
+  
  
     
   }
 li{ display:inline-block; padding: 1rem;}
 
 li.active a {
-    font-weight: 600;
+    
      text-decoration: underline;
-  text-decoration-color: darkgreen;
+  text-decoration-color: green;
     text-decoration-style: wavy;
   }
 
