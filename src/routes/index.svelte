@@ -7,10 +7,10 @@
 </script>
 
 <svelte:head>
-  <title>Works</title>
+  <title>tm</title>
 </svelte:head>
-<div class="card">
-<h1>Recent works</h1>
+<div>
+<h2>Recent works</h2>
 
 <PostsGrid {posts} />
 

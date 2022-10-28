@@ -177,12 +177,11 @@ sup { font-size: 80%; vertical-align: top; }
         background-color: var(--primary-color-light);
     }
     :root {
-        --text-color: #fff;
-        --link-color: orange;
-        --link-color-alt: yellow;
-        --primary-color: orange;
-        --primary-color-light: dimgrey;
-        --secondary-color: black;
-        --tertiary-color: #2d2d2d;
+       --text-color: #fff;
+      --link-color: #03A63C;
+      --link-color-alt: #04D939;
+      --primary-color: darkblue;
+      --secondary-color: black;
+      --tertiary-color: #121923;
     }
 }

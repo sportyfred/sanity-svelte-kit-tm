@@ -9,10 +9,21 @@
 
 
 <header>
-  <span><h1 style="border-bottom: 0px;">{blogTitle}</h1></span>
+  <h1 style="border-bottom: 0px;font-size: 5em;
+  letter-spacing: -2px;">{blogTitle}</h1>
   
 </header>
 
 <style>header{
     text-align: center;
-}</style>
+
+  text-decoration: none;
+  text-decoration-color: darkgreen;
+}
+#wavy{
+  text-decoration-style: wavy;
+}
+#double{
+  text-decoration-style: double;
+}
+</style>

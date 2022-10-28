@@ -28,8 +28,20 @@
     
   }
   a {
-    text-decoration: none;
+    
     display: block;
+      text-align: center;
+
+  text-decoration: none;
+  text-decoration-color: darkgreen;
+    text-decoration-style: wavy;
+
+  }
+
+  a:hover { 
+  text-decoration: underline;
+ 
+    text-decoration-style: wavy;
   }
 li{ display:inline-block; padding: 1rem;}
 
@@ -42,9 +54,12 @@ li{ display:inline-block; padding: 1rem;}
   }
   @media screen and (min-width: 400px) {
     nav {
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
       
     }
   }
+
+  
+
   </style>
