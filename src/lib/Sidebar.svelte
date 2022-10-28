@@ -4,9 +4,11 @@
 </script>
 <script>
 
+let pathname
 
-  let path
-  $: ({pathname} = $page)
+$: pathname = $page.url.pathname;
+
+ 
 
 </script>
 
@@ -25,23 +27,23 @@
   }
   a[data-selected='true'] {
     font-weight: 600;
-    
+     text-decoration: underline;
+  text-decoration-color: darkgreen;
+    text-decoration-style: wavy;
   }
   a {
     
     display: block;
       text-align: center;
 
-  text-decoration: none;
-  text-decoration-color: darkgreen;
-    text-decoration-style: wavy;
+ 
 
   }
 
   a:hover { 
   text-decoration: underline;
  
-    text-decoration-style: wavy;
+    
   }
 li{ display:inline-block; padding: 1rem;}
 
