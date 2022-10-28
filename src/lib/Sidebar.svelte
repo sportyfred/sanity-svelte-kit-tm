@@ -4,9 +4,9 @@
 </script>
 <script>
 
-let pathname
+let pathname;
 
-$: ({pathname} = $page.url.pathname)
+$: pathname = $page.url.pathname;
 
  
 
