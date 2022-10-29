@@ -12,13 +12,13 @@ export default {
                 'NOTE: Because these sites are static builds, they need to be re-deployed to see the changes when documents are published.',
               sites: [
                 {
-                  buildHookId: '',
+                  buildHookId: '635d65fd802d900fa83e7624',
                   title: 'Sanity Studio',
                   name: 'sanity-svelte-kit-tm-studio',
                   apiId: 'e9d70f76-b9a4-4c64-9f70-2335b253ff4b'
                 },
                 {
-                  buildHookId: '',
+                  buildHookId: '635d663a39c8fc135ecc9ca3',
                   title: 'tm',
                   name: 'sanity-svelte-kit-tm',
                   apiId: '63e3ddbb-e514-4dcb-8e1b-160bc92941b8'

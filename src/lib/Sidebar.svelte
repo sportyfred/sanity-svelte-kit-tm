@@ -15,7 +15,11 @@ $: pathname = $page.url.pathname;
 <nav>
     <ul>
       <li class={pathname === '/' ? 'active' : ''}><a href="/">home</a></li>
-       <li class={pathname === '/authors/tove-moeller' ? 'active' : ''}><a href="/authors/tove-moeller">about</a></li>
+       <li class={pathname === '/works' ? 'active' : ''}><a href="/works">works</a></li> 
+       
+       <li class={pathname === '/tm' ? 'active' : ''}><a href="/tm">about</a></li>
+      
+
     </ul>
   </nav>
 
