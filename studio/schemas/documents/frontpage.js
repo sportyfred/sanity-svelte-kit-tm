@@ -1,67 +1,33 @@
-
-
-import ColorPicker from 'sanity-plugin-color-picker/lib'
-
 export default {
-  name: 'siteSettings',
+  name: 'frontpage',
   type: 'document',
-  title: 'Site Settings',
-
+  title: 'Frontpage',
   fields: [
     {
-      name: 'title',
+      name: 'name',
       type: 'string',
-      title: 'Title'
+      title: 'Name'
     },
     {
-      name: 'description',
-      type: 'text',
-      title: 'Description',
-      description: 'Describe your blog for search engines and social media.'
-    },
-    {
-      name: 'keywords',
-      type: 'array',
-      title: 'Keywords',
-      description: 'Add keywords that describes your blog.',
-      of: [{type: 'string'}],
+      name: 'slug',
+      type: 'slug',
+      title: 'Slug',
+      description: 'Some frontends will require a slug to be set to be able to show the person',
       options: {
-        layout: 'tags'
+        source: 'name',
+        maxLength: 96
       }
     },
-    
     {
-  title: "Color List",
-  description: "Pick a color",
-  name: "colors",
-  type: "colorlist", // required
-  options: {
-    list: [
-      { title: "Red", value: "#f16d70" },
-      { title: "Teal", value: "#88c6db" },
-      { title: "Purple", value: "#aca0cc" },
-      { title: "Green", value: "#bdcdcb" },
-      { title: "White", value: "white" }
-    ]
-  }
-},
-{
- title: "Color Picker",
-  name: "colorpicker",
-  type: "string",
-  inputComponent: ColorPicker,
-  options: {
-    list: [
-      { title: "Yellow", value: "#f5c701" },
-      { title: "Pink", value: "#f6cedb" },
-      { title: "Red", value: "#f16d70" },
-      { title: "Teal", value: "#88c6db" },
-      { title: "Purple", value: "#aca0cc" },
-      { title: "Green", value: "#bdcdcb" },
-      { title: "White", value: "#fff" }
-    ]
-  }
-}
+      name: 'image',
+      type: 'image',
+      title: 'Image'
+    },
+    {
+      name: 'body',
+      title: 'Post body',
+      type: 'portableText',
+    }
   ],
   preview: {
     select: {

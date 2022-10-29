@@ -40,13 +40,7 @@ export default {
     hotspot : true
   }
     },
-    {
-  name: "name",
-  type: "image",
-  options: {
-    sources: [FionaPlaceholder]
-  }
-},
+   
 
 
     {
