@@ -1,5 +1,5 @@
 <script>
-  import PostCard from '$lib/WorksCard.svelte'
+  import PostCard from '$lib/PostCard.svelte'
 
   export let posts = []
  
@@ -13,7 +13,7 @@
 
   {#each posts as post (post.slug.current)}
 {#each post.categories as category}
-{#if category.title == "Works"}
+{#if category.title == "Text"}
  <PostCard {post} />
 {/if}
 {/each}

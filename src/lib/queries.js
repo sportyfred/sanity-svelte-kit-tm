@@ -13,6 +13,8 @@ export function getPostsQuery(extraFilter) {
     slug,
     image,
     publishedAt,
+     
+    categories[]->{title}
   }`
 }
 

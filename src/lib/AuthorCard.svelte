@@ -5,7 +5,7 @@
 </script>
 
 {#if author.name}
-  <a href="/authors/{author.slug.current}">
+  <a href="{author.slug.current}">
     <span>
       <SanityImage image={author.image} maxWidth={40} />
     </span>

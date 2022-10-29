@@ -4,26 +4,18 @@
   export let post
 </script>
 
-<article>{#each post.categories as category}
- <div class="categories">
- <p class="category">
- {category.title}
- </p></div>
-   {/each}
+<article>
   <h2>
     <a rel="prefetch" href="/blog/{post.slug.current}">{post.title}</a>
-  </h2> 
+  </h2>
   {#if post.image}
     <div class="image">
       <SanityImage image={post.image} maxWidth={300} />
     </div>
   {/if}
-
-
-
-
-</article>
  
+</article>
+
 <style>
   article {
     display: flex;
@@ -54,20 +46,4 @@
     object-fit: cover;
     margin: 0;
   }  
-  .categories {
-
-   
-  align-items: flex-end;
-   padding: .75em 1.5em;
-  }
-  .category { float: right;
-    color: #000;
-    background-color: #BB99FF;
-    padding: .75em 1.5em;
-    border: 2px solid black;
-    border-radius: .25em;
-    box-shadow: -.25em .25em 0 #000;
-   
-  }
-
 </style>
