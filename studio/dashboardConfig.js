@@ -1,11 +1,6 @@
 export default {
   widgets: [
-    {
-      name: 'sanity-tutorials',
-      options: {
-        templateRepoId: 'sanity-io/sanity-template-gatsby-blog'
-      }
-    },
+   
     {
       name: 'project-info',
       options: {
@@ -24,9 +19,9 @@ export default {
                 },
                 {
                   buildHookId: '',
-                  title: 'Blog Website',
-                  name: '',
-                  apiId: ''
+                  title: 'tm',
+                  name: 'sanity-svelte-kit-tm',
+                  apiId: '63e3ddbb-e514-4dcb-8e1b-160bc92941b8'
                 }
               ]
             }
@@ -38,7 +33,7 @@ export default {
             value: 'https://github.com/sportyfred/sanity-svelte-kit-tm',
             category: 'Code'
           },
-          {title: 'Frontend', value: '', category: 'apps'}
+          {title: 'Frontend', value: 'https://sanity-svelte-kit-tm.netlify.app/', category: 'apps'}
         ]
       }
     },

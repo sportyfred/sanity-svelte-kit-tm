@@ -32,6 +32,6 @@
   />
 {/if}
 
-<h2>Posts by {author.name}</h2>
+<h2>Recent by {author.name}</h2>
 
 <PostsGrid posts={author.posts} />

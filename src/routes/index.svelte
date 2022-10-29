@@ -10,7 +10,7 @@
   <title>tm</title>
 </svelte:head>
 <div>
-<h2>Recent works</h2>
+<h1>Recent</h1>
 
 <PostsGrid {posts} />
 
