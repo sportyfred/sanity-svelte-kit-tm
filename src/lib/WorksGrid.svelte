@@ -2,12 +2,27 @@
   import PostCard from '$lib/PostCard.svelte'
 
   export let posts = []
+ 
+
+  
+
 </script>
 
 <section class="card">
+
+
   {#each posts as post (post.slug.current)}
-    <PostCard {post} />
+{#each post.categories as category}
+{#if category.title == "Works"}
+ <PostCard {post} />
+{/if}
+{/each}
+
+   
+  
   {/each}
+
+
   
 </section>
 
