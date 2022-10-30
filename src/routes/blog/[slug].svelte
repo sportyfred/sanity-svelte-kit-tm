@@ -7,13 +7,11 @@
   import AuthorCard from '$lib/AuthorCard.svelte'
   import SanityImage from '$lib/SanityImage.svelte'
   import YoutubeBlock from '$lib/YoutubeBlock.svelte' 
-   
- 
 
 
   export let post
-</script>
 
+</script>
 <svelte:head>
   <title>{post.title}</title>
 </svelte:head>

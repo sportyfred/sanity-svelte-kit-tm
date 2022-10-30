@@ -10,7 +10,7 @@
   </h2>
   {#if post.image}
     <div class="image">
-      <SanityImage image={post.image} maxWidth={300} />
+      <SanityImage image={post.image} />
     </div>
   {/if}
  

@@ -15,7 +15,7 @@
   </h2> 
   {#if post.image}
     <div class="image">
-      <SanityImage image={post.image} maxWidth={300} />
+      <SanityImage image={post.image} />
     </div>
   {/if}
 
@@ -62,8 +62,8 @@
   }
   .category { float: right;
     color: #000;
-    background-color: #BB99FF;
-    padding: .75em 1.5em;
+    background-color: #BB99F0;
+    padding: .5em .5em;
     border: 2px solid black;
     border-radius: .25em;
     box-shadow: -.25em .25em 0 #000;
