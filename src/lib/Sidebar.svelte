@@ -27,30 +27,59 @@ $: pathname = $page.url.pathname;
   ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 1rem;
   }
  
   a {
     
-    display: block;
-      text-align: center;
-
- text-decoration: none;
-
-  }
-
-  a:hover { 
-  
  
-    
+
+ background: url("https://ewebdesign.com/wp-content/themes/ewebdesign/assets/img/wave.svg");
+  background-repeat: repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto auto;
+  background-repeat: repeat-x;
+  background-size: 16px 8px; 
+  background-position: 2px 19px;
+  animation: move 15s linear infinite;
+  -webkit-animation: move 15s linear infinite;
+  animation-play-state: paused;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+
+}
+
+a:hover {
+  animation-play-state: running;
+}
+
+
+@-webkit-keyframes move {
+from {
+    background-position: 2px 19px;
   }
-li{ display:inline-block; padding: 1rem;}
+  to {
+    background-position: 500px 19px;
+  }
+}
+
+@keyframe move {
+from {
+    background-position: 2px 19px;
+  }
+  to {
+    background-position: 500px 19px;
+  }
+}
+
+li{ display:inline-block; padding: 1rem; }
 
 li.active a {
     
-     text-decoration: underline;
-  text-decoration-color: green;
-    text-decoration-style: wavy;
+     background-color: darkgreen;
+            color: white;
   }
 
   nav {
