@@ -5,13 +5,16 @@
   export let blogTitle = 'tm'
 
 
+
+
+  import SanityImage from '$lib/SanityImage.svelte'
+  export let author
 </script>
 
-
 <header>
-  <h1 style="border-bottom: 0px;font-size: 5em;
-  letter-spacing: -2px;">{blogTitle}</h1>
-  
+  {#if author.image}
+  <SanityImage image={author.image} />
+{/if}
 </header>
 
 <style>header{
