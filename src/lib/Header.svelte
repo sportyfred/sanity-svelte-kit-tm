@@ -7,14 +7,11 @@
 
 
 
-  import SanityImage from '$lib/SanityImage.svelte'
-  export let author
+ 
 </script>
 
 <header>
-  {#if author.image}
-  <SanityImage image={author.image} />
-{/if}
+ 
 </header>
 
 <style>header{
