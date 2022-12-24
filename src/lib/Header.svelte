@@ -5,6 +5,12 @@
   export let blogTitle = 'tm'
 
 
+import ImageBlock from '$lib/ImageBlock.svelte'
+  import AuthorBlock from '$lib/AuthorBlock.svelte'
+
+import SanityImage from '$lib/SanityImage.svelte'
+  export let author
+</script>
 
 
  
@@ -12,7 +18,10 @@
 
 <header>
  
-</header>
+
+{#if author.image}
+  <SanityImage image={author.image} />
+{/if} </header>
 
 <style>header{
     text-align: center;
