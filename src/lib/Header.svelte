@@ -2,26 +2,20 @@
 
 <script>
 
-  export let blogTitle = 'tm'
-
-
-import ImageBlock from '$lib/ImageBlock.svelte'
-  import AuthorBlock from '$lib/AuthorBlock.svelte'
-
-import SanityImage from '$lib/SanityImage.svelte'
-  export let author
-</script>
-
-
  
+  import SanityImage from '$lib/SanityImage.svelte'
+
+
 </script>
+
+
 
 <header>
  
 
-{#if author.image}
-  <SanityImage image={author.image} />
-{/if} </header>
+
+  <img src="https://cdn.sanity.io/images/i4hcircn/production/99eac5453945500b5dfecb0e3e1d70a5f6c5d3f9-1000x1000.png" align="center">
+</header>
 
 <style>header{
     text-align: center;
@@ -34,5 +28,13 @@ import SanityImage from '$lib/SanityImage.svelte'
 }
 #double{
   text-decoration-style: double;
+}
+img {
+  display: block;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+justify-content: center;
 }
 </style>

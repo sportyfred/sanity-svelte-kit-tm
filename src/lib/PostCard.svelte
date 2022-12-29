@@ -4,12 +4,12 @@
   export let post
 </script>
 
-<article>{#each post.categories as category}
- <div class="categories">
+<article> <div class="categories">{#each post.categories as category}
+
  <p class="category">
  {category.title}
- </p></div>
-   {/each}
+ </p>
+   {/each}</div>
   <h2>
     <a rel="prefetch" href="/blog/{post.slug.current}">{post.title}</a>
   </h2> 
@@ -58,7 +58,7 @@
 
    
   align-items: flex-end;
-   padding: .75em 1.5em;
+   padding: .5em 0.5em;
   }
   .category { float: right;
     color: #000;
@@ -67,6 +67,7 @@
     border: 2px solid black;
     border-radius: .25em;
     box-shadow: -.25em .25em 0 #000;
+    font-size: 16px;
    
   }
 

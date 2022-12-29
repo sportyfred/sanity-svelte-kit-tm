@@ -9,7 +9,7 @@
     <span>
       <SanityImage image={author.image} maxWidth={400} />
     </span>
-    {author.name}
+ 
   </a>
 {/if}
 
