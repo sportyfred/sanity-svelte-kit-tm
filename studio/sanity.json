@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "Tove Möller"
-  },
   "api": {
     "projectId": "i4hcircn",
     "dataset": "production"
+  },
+  "project": {
+    "name": "Tove Möller"
   },
   "plugins": [
     "@sanity/base",
