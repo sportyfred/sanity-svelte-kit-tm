@@ -27,7 +27,7 @@ time, mark, audio, video {
 /* Variables */
 :root {
     --desktop-font-size: 1.1rem/1.25;
-    --mobile-font-size: 1rem/1.45;
+    --mobile-font-size: 1rem/1.25;
     --text-color: #2d2d2d;
     --link-color: blue;
     --link-color-alt: darkblue;
