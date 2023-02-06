@@ -58,6 +58,9 @@ export default {
     },
     {type: 'youtube'},
 
+    
+    {type: 'soundcloud'},
+
     {
       type: 'code'
     }

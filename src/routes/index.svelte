@@ -4,6 +4,11 @@
 
   export let posts
   export let authors
+
+  import { SoundCloud } from 'sveltekit-embed'
+
+
+
 </script>
 
 <svelte:head>
@@ -19,5 +24,6 @@
 {#each authors as author}
   <AuthorCard {author} />
 {/each}
+
 
 </div>

@@ -7,7 +7,7 @@
   import AuthorCard from '$lib/AuthorCard.svelte'
   import SanityImage from '$lib/SanityImage.svelte'
   import YoutubeBlock from '$lib/YoutubeBlock.svelte' 
-
+  import SoundCloudBlock from '$lib/SoundCloudBlock.svelte'
 
   export let post
 
@@ -25,9 +25,9 @@
   })}
 </p>
 
-{#each post.authors || [] as author}
+<!-- {#each post.authors || [] as author}
   <AuthorCard {author} />
-{/each}
+{/each} -->
 
 <hr />
 
@@ -43,6 +43,7 @@
   components={{
     types: {
       youtube: YoutubeBlock,
+      soundcloud: SoundCloudBlock,
       code: Code,
       image: ImageBlock,
       authorReference: AuthorBlock

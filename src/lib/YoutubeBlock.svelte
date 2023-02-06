@@ -4,7 +4,7 @@ import getYouTubeID from 'get-youtube-id'
 
   export let portableText
   $: value = portableText.value
-    $: id = getYouTubeID(value.url);
+    $: id = getYouTubeID(value.yurl);
  
 </script>
 

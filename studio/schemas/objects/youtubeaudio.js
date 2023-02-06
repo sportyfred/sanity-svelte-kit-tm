@@ -4,25 +4,25 @@ import getYouTubeId from 'get-youtube-id'
 import YouTube from 'react-youtube'
 
 const Preview = ({value}) => {
-  const { url } = value
-  const id = getYouTubeId(url)
+  const { ytaurl } = value
+  const id = getYouTubeId(ytaurl)
   return (<YouTube videoId={id} />)
 }
 
 export default {
-  name: 'youtube',
+  name: 'youtubeaudio',
   type: 'object',
-  title: 'YouTube Embed',
+  title: 'YouTube Audio Embed',
   fields: [
     {
-      name: 'yurl',
+      name: 'ytaurl',
       type: 'url',
-      title: 'YouTube video URL'
+      title: 'YouTube audio video URL'
     }
   ],
   preview: {
     select: {
-      url: 'url'
+      ytaurl: 'ytaurl'
     },
     component: Preview
   }
