@@ -85,7 +85,7 @@ li.active a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding: 0em;
   }
   @media screen and (min-width: 400px) {
