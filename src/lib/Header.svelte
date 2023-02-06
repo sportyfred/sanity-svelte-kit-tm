@@ -31,7 +31,7 @@
 }
 img {
   display: block;
-  width: 20%;
+  height: 80vh;
   margin-left: auto;
   margin-right: auto;
   display: flex;

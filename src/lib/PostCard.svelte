@@ -4,18 +4,18 @@
   export let post
 </script>
 
-<article> <div class="categories">{#each post.categories as category}
+<article>  <!-- <div class="categories">{#each post.categories as category}
 
- <p class="category">
- {category.title}
+<p class="category">
+ {category.title} 
  </p>
-   {/each}</div>
-  <h2>
+   {/each}</div> -->
+  <h4>
     <a rel="prefetch" href="/blog/{post.slug.current}">{post.title}</a>
-  </h2> 
+  </h4> 
   {#if post.image}
     <div class="image">
-      <SanityImage image={post.image} />
+      <a rel="prefetch" href="/blog/{post.slug.current}"><SanityImage image={post.image} /></a>
     </div>
   {/if}
 
@@ -37,7 +37,7 @@
     margin: 1rem 0 0;
   }
 
-  h2 a {
+  h2,h3,h4 a {
     text-decoration: none;
   }
 

@@ -15,11 +15,14 @@
   <title>tm</title>
 </svelte:head>
 <div>
-<h1>Recent</h1>
+<h2 style="line-height: 0.7; margin: 0rem 0;">Senaste</h2>
+<h2 style="line-height: 0.7; font-weight: normal; margin: 0rem 0;">
+Latest
+</h2>
 
 <PostsGrid {posts} />
 
-<h2 style="margin-top: 4rem">{authors.length > 1 ? 's' : ''}</h2>
+<h3 style="margin-top: 4rem">{authors.length > 1 ? 's' : ''}</h3>
 
 {#each authors as author}
   <AuthorCard {author} />

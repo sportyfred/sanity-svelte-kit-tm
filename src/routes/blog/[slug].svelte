@@ -18,16 +18,17 @@
 
 <h1>{post.title}</h1>
 <p>
-  Published {new Date(post.publishedAt).toLocaleDateString('en', {
+  {new Date(post.publishedAt).toLocaleDateString('swe', {
     month: 'long',
-    day: '2-digit',
+    
     year: 'numeric'
   })}
 </p>
 
-<!-- {#each post.authors || [] as author}
+<!--
+{#each post.authors || [] as author}
   <AuthorCard {author} />
-{/each} -->
+{/each}-->
 
 <hr />
 

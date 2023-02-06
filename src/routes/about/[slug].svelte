@@ -10,8 +10,6 @@
   export let author
 </script>
 
-<h1>{author.name}</h1>
-
 {#if author.image}
   <SanityImage image={author.image} />
 {/if}
