@@ -11,10 +11,10 @@
 </script>
 
 {#if author.image}
-  <SanityImage image={author.image} />
+  <SanityImage image={author.image}  maxWidth={100} />
 {/if}
 
-{#if author?.bio}
+{#if author.bio}
   <PortableText
     value={author.bio}
     components={{
@@ -30,6 +30,3 @@
   />
 {/if}
 
-<h2>Recent by {author.name}</h2>
-
-<PostsGrid posts={author.posts} />

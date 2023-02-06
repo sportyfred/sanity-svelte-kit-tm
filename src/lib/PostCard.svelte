@@ -10,9 +10,11 @@
  {category.title} 
  </p>
    {/each}</div> -->
-  <h4>
-    <a rel="prefetch" href="/blog/{post.slug.current}">{post.title}</a>
-  </h4> 
+   {#if post.subtitle}<h4 style="line-height: 0.7; font-weight: normal; margin: 0rem 0;">
+<a rel="prefetch" href="/blog/{post.slug.current}">{post.subtitle}</a>
+</h4>{/if}
+<h4 style="line-height: 0.9; margin: 0rem 0;"><a rel="prefetch" href="/blog/{post.slug.current}">{post.title}</a></h4>
+
   {#if post.image}
     <div class="image">
       <a rel="prefetch" href="/blog/{post.slug.current}"><SanityImage image={post.image} /></a>
@@ -31,6 +33,7 @@
     flex-direction: column-reverse;
     /* Align cards */
     align-self: start;
+    
   }
 
   h2 {

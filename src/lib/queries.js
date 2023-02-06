@@ -10,6 +10,7 @@ export function getPostsQuery(extraFilter) {
     ${extraFilter ? `&& ${extraFilter}` : ''}
   ] | order(publishedAt desc) {
     title,
+    subtitle,
     slug,
     image,
     publishedAt,

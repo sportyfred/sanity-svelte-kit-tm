@@ -31,7 +31,7 @@
  
   :root {
    
-    --desktop-font-size: 1.4rem/1.8 !important;
+    --desktop-font-size: 1.3rem/1.6 !important;
     --mobile-font-size: 1rem/1.4 !important;
     --text-color: darkgreen !important;
     --link-color: #025939 !important;

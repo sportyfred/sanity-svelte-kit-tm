@@ -16,6 +16,12 @@ export default {
       validation: (Rule) => Rule.required()
     },
     {
+      name: 'subtitle',
+      type: 'string',
+      title: 'Subtitle',
+      description: 'Titles should be catchy, descriptive, and not too long'
+    },
+    {
       name: 'slug',
       type: 'slug',
       title: 'Slug',

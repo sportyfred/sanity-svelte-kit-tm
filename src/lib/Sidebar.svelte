@@ -15,7 +15,7 @@ $: pathname = $page.url.pathname;
 <nav>
     <ul>
       <li class={pathname === '/' ? 'active' : ''}><a href="/">works</a></li>
-       <li class={pathname === '/text' ? 'active' : ''}><a href="/text">text</a></li> 
+      
        <li class={pathname === '/about/tm' ? 'active' : ''}><a href="/about/tm">about</a></li>
 
 
@@ -26,7 +26,7 @@ $: pathname = $page.url.pathname;
   ul {
     list-style: none;
     margin: 0;
-    padding: 1rem;
+    padding: 0rem;
   }
  
   a {
@@ -86,7 +86,7 @@ li.active a {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 1em;
+    padding: 0em;
   }
   @media screen and (min-width: 400px) {
     nav {

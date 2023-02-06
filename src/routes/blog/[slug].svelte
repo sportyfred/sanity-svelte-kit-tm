@@ -25,10 +25,7 @@
   })}
 </p>
 
-<!--
-{#each post.authors || [] as author}
-  <AuthorCard {author} />
-{/each}-->
+
 
 <hr />
 

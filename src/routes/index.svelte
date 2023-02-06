@@ -5,8 +5,6 @@
   export let posts
   export let authors
 
-  import { SoundCloud } from 'sveltekit-embed'
-
 
 
 </script>
@@ -22,11 +20,7 @@ Latest
 
 <PostsGrid {posts} />
 
-<h3 style="margin-top: 4rem">{authors.length > 1 ? 's' : ''}</h3>
 
-{#each authors as author}
-  <AuthorCard {author} />
-{/each}
 
 
 </div>

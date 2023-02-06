@@ -19,7 +19,7 @@
 
 <style>header{
     text-align: center;
-
+padding: 0rem;
   text-decoration: none;
   text-decoration-color: darkgreen;
 }
@@ -30,8 +30,8 @@
   text-decoration-style: double;
 }
 img {
-  
-  height: 30vh;
+  padding: 0rem;
+  height: 50vh;
   margin-left: auto;
   margin-right: auto;
 

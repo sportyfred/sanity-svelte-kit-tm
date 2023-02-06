@@ -4,14 +4,15 @@
   export let author
 </script>
 
-{#if author.name}
+
+
+
   <a href="{author.slug.current}">
     <span>
-      <SanityImage image={author.image} maxWidth={400} />
+   <SanityImage image={author.image} maxWidth={400} />
     </span>
- 
+
   </a>
-{/if}
 
 <style>
   a {
