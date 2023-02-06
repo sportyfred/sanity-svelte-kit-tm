@@ -29,12 +29,27 @@ padding: 0rem;
 #double{
   text-decoration-style: double;
 }
+
 img {
   padding: 0rem;
-  height: 50vh;
+  height: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+
+justify-content: center;
+
+ @media screen and (min-width: 400px) {
+
+img {
+  padding: 0rem;
+  height: 40vh;
   margin-left: auto;
   margin-right: auto;
 
 justify-content: center;
 }
+
+   
+  }
+
 </style>
