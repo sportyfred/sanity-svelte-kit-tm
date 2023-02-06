@@ -37,7 +37,7 @@ img {
   margin-right: auto;
 
 justify-content: center;
-
+}
  @media screen and (min-width: 400px) {
 
 img {
