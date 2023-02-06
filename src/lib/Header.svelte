@@ -30,11 +30,11 @@
   text-decoration-style: double;
 }
 img {
-  display: block;
-  height: 80vh;
+  
+  height: 30vh;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
+
 justify-content: center;
 }
 </style>
