@@ -12,12 +12,12 @@
 <svelte:head>
   <title>tm</title>
 </svelte:head>
-<div>
+<div><!--
 <h2 style="line-height: 0.7; margin: 0rem 0;">Senaste</h2>
 <h2 style="line-height: 0.7; font-weight: normal; margin: 0rem 0;">
 Latest
 </h2>
-
+-->
 <PostsGrid {posts} />
 
 
