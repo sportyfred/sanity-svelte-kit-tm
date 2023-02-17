@@ -60,7 +60,9 @@ export default {
 
     
     {type: 'soundcloud'},
+{type: 'vimeo'},
 
+    
     {
       type: 'code'
     }

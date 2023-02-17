@@ -78,7 +78,7 @@ li{ display:inline-block; padding: 1rem; }
 li.active a {
     
      background-color: darkgreen;
-            color: white;
+           
   }
 
   nav {
@@ -96,6 +96,9 @@ li.active a {
     }
   }
 
-  
+  @media (prefers-color-scheme: dark) { 
+ li.active a {
+ color: white;}
+  }
 
   </style>

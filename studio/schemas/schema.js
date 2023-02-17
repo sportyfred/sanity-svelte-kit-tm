@@ -26,6 +26,7 @@ import portableText from './objects/portableText'
 import authorReference from './objects/authorReference'
 import youtube from './objects/youtube'
 import soundcloud from './objects/soundcloud'
+import vimeo from './objects/vimeo'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -49,6 +50,6 @@ export default createSchema({
     portableText,
     authorReference,
       excerptPortableText,
-youtube, soundcloud
+youtube, soundcloud, vimeo
   ])
 })

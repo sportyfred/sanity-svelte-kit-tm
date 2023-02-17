@@ -8,6 +8,7 @@
   import SanityImage from '$lib/SanityImage.svelte'
   import YoutubeBlock from '$lib/YoutubeBlock.svelte' 
   import SoundCloudBlock from '$lib/SoundCloudBlock.svelte'
+    import VimeoBlock from '$lib/VimeoBlock.svelte'
 
   export let post
 
@@ -42,6 +43,7 @@
     types: {
       youtube: YoutubeBlock,
       soundcloud: SoundCloudBlock,
+      vimeo: VimeoBlock,
       code: Code,
       image: ImageBlock,
       authorReference: AuthorBlock
