@@ -30,3 +30,17 @@
   />
 {/if}
 
+<h4>CV</h4>
+{#if author.publikationer}
+<table style="table-layout: auto;">
+  <caption>Publications</caption>
+
+ {#each author.publikationer.rows as row}
+ <tr>
+     {#each row.cells as cell}
+    <td>{cell}</td>
+  {/each}
+  </tr>
+  {/each}
+ </table>
+{/if}
