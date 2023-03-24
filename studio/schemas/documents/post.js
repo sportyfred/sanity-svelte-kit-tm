@@ -19,7 +19,8 @@ export default {
       name: 'subtitle',
       type: 'string',
       title: 'Subtitle',
-      description: 'Titles should be catchy, descriptive, and not too long'
+      description: 'Titles should be catchy, descriptive, and not too long',
+
     },
     {
       name: 'slug',
@@ -36,7 +37,9 @@ export default {
       name: 'publishedAt',
       type: 'datetime',
       title: 'Published at',
-      description: 'This can be used to schedule post for publishing'
+      description: 'This can be used to schedule post for publishing',
+      
+      validation: (Rule) => Rule.required()
     },
     {
       name: 'image',

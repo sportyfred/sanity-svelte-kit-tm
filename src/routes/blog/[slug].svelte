@@ -20,7 +20,7 @@
 <h1>{post.title}</h1>
 <p>
   {new Date(post.publishedAt).toLocaleDateString('swe', {
-    month: 'long',
+  
     
     year: 'numeric'
   })}

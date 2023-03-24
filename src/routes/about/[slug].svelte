@@ -31,11 +31,53 @@
 {/if}
 
 <h4>CV</h4>
+{#if author.studier}
+<table style="table-layout: auto;">
+  <caption>Educations</caption>
+
+ {#each author.studier.rows as row}
+ <tr>
+     {#each row.cells as cell}
+    <td>{cell}</td>
+  {/each}
+  </tr>
+  {/each}
+ </table>
+{/if}
+
+{#if author.utstallningar}
+<table style="table-layout: auto;">
+  <caption>Exhibitions</caption>
+
+ {#each author.utstallningar.rows as row}
+ <tr>
+     {#each row.cells as cell}
+    <td>{cell}</td>
+  {/each}
+  </tr>
+  {/each}
+ </table>
+{/if}
+
 {#if author.publikationer}
 <table style="table-layout: auto;">
   <caption>Publications</caption>
 
  {#each author.publikationer.rows as row}
+ <tr>
+     {#each row.cells as cell}
+    <td>{cell}</td>
+  {/each}
+  </tr>
+  {/each}
+ </table>
+{/if}
+
+{#if author.stipendier}
+<table style="table-layout: auto;">
+  <caption>Grants</caption>
+
+ {#each author.stipendier.rows as row}
  <tr>
      {#each row.cells as cell}
     <td>{cell}</td>
