@@ -8,11 +8,11 @@
   import SanityImage from '$lib/SanityImage.svelte'
 
   export let author
+
+    
 </script>
 
-{#if author.image}
-  <SanityImage image={author.image}  maxWidth={100} />
-{/if}
+
 
 {#if author.bio}
   <PortableText
@@ -31,58 +31,107 @@
 {/if}
 
 <h4>CV</h4>
-{#if author.studier}
+
 <table style="table-layout: auto;">
-  <caption>Educations</caption>
+  <th colspan="4">Educations</th>
 
  {#each author.studier.rows as row}
  <tr>
-     {#each row.cells as cell}
-    <td>{cell}</td>
-  {/each}
+     
+    <td>{row.cells[0]}</td>
+<td colspan="2">{row.cells[1]}</td>
+<td>{row.cells[2]}</td>
   </tr>
   {/each}
- </table>
-{/if}
 
-{#if author.utstallningar}
-<table style="table-layout: auto;">
-  <caption>Exhibitions</caption>
+
+  <th colspan="4">Exhibitions</th>
 
  {#each author.utstallningar.rows as row}
+
+ 
+
  <tr>
-     {#each row.cells as cell}
-    <td>{cell}</td>
-  {/each}
+     {#if row.cells[1]!==''}
+    <td>{row.cells[0]}</td>
+
+   {#if row.cells[4]!==''}
+      <td><a target="_blank" href="{row.cells[4]}">{row.cells[1]}</a></td>
+      
+      {:else}
+        <td>{row.cells[1]}</td>
+
+
+{/if}
+  <td>{row.cells[2]}</td>
+   <td>{row.cells[3]}</td>
+  
+        
+
+{/if}
+  
   </tr>
   {/each}
- </table>
-{/if}
-
-{#if author.publikationer}
-<table style="table-layout: auto;">
-  <caption>Publications</caption>
+ 
+  <th colspan="4">Publications</th>
 
  {#each author.publikationer.rows as row}
+ 
+
  <tr>
-     {#each row.cells as cell}
-    <td>{cell}</td>
-  {/each}
+     {#if row.cells[1]!==''}
+    <td>{row.cells[0]}</td>
+
+   {#if row.cells[2]!==''}
+      <td colspan="3"><a target="_blank" href="{row.cells[2]}">{row.cells[1]}</a></td>
+      
+      {:else}
+        <td colspan="3">{row.cells[1]}</td>
+
+
+{/if}
+  
+  
+  
+        
+
+{/if}
+  
   </tr>
   {/each}
- </table>
-{/if}
-
-{#if author.stipendier}
-<table style="table-layout: auto;">
-  <caption>Grants</caption>
+ 
+  <th colspan="4">Grants</th>
 
  {#each author.stipendier.rows as row}
+ 
  <tr>
-     {#each row.cells as cell}
-    <td>{cell}</td>
-  {/each}
+     {#if row.cells[1]!==''}
+    <td>{row.cells[0]}</td>
+
+   {#if row.cells[2]!==''}
+      <td colspan="3"><a target="_blank" href="{row.cells[2]}">{row.cells[1]}</a></td>
+      
+      {:else}
+        <td colspan="3">{row.cells[1]}</td>
+
+
+{/if}
+  
+  
+  
+        
+
+{/if}
+  
   </tr>
   {/each}
  </table>
-{/if}
+
+ <style>
+ th {
+ color: white;
+
+ padding-top: 20px;}
+ tr:hover {background-color: #D6EEEE;}
+ </style>
+

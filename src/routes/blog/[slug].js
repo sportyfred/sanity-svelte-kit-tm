@@ -36,3 +36,4 @@ export async function get({params: {slug}}) {
     status: 404
   }
 }
+
