@@ -11,6 +11,7 @@
     import VimeoBlock from '$lib/VimeoBlock.svelte'
 
   export let post
+console.log(post.authors)
 
 </script>
 <svelte:head>
@@ -53,3 +54,4 @@
     }
   }}
 />
+

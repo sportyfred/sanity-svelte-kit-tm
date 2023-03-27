@@ -1,9 +1,9 @@
-<footer>
+<footer>™
 </footer>
 
 <style>
   footer {
-    text-align: center;
+    text-align: left;
     margin-top: 10vh;
     margin-bottom: 10vh;
     display: flex;

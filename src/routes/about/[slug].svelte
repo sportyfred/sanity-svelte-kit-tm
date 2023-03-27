@@ -65,8 +65,7 @@
 {/if}
   <td>{row.cells[2]}</td>
    <td>{row.cells[3]}</td>
-  
-        
+
 
 {/if}
   
@@ -132,6 +131,6 @@
  color: white;
 
  padding-top: 20px;}
- tr:hover {background-color: #D6EEEE;}
+
  </style>
 

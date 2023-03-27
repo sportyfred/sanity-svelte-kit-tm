@@ -32,7 +32,7 @@ padding: 0rem;
 
 img {
   padding: 0rem;
-  height: 20vh;
+  height: 25vh;
   margin-left: auto;
   margin-right: auto;
 
@@ -42,7 +42,7 @@ justify-content: center;
 
 img {
   padding: 0rem;
-  height: 40vh;
+  height: 45vh;
   margin-left: auto;
   margin-right: auto;
 

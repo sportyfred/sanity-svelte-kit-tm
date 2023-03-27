@@ -13,6 +13,13 @@ export default {
       type: 'string',
       title: 'Title'
     },
+     {
+      name: 'image',
+      type: 'image',
+      title: "Site image",
+      options: {
+        hotspot: true
+      }},
     {
       name: 'description',
       type: 'text',

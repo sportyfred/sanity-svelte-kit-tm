@@ -1,18 +1,31 @@
 
+
+
+ <script context="module">
+   export async function load({ fetch }) {
+      const settings = await fetch('/settings').then(res => res.json());
+      return {
+        props: {
+          settings
+        }
+      }
+    }
+</script>
+ 
+
 <script>
   import Header from '$lib/Header.svelte'
   import Footer from '$lib/Footer.svelte'
    import Sidebar from '$lib/Sidebar.svelte'
+
   
 
+export let settings
+let set = settings.settings
 
 </script>
 
-
-
- 
-
- <Header blogTitle={'tm'} />
+ <Header blogTitle={set.title} />
 <Sidebar />
   <main style="padding: 1em"><slot /></main>
 

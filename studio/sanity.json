@@ -5,7 +5,7 @@
     "dataset": "production"
   },
   "project": {
-    "name": "Tove Möller"
+    "name": "tm3000"
   },
   "plugins": [
     "@sanity/base",
