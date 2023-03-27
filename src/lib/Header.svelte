@@ -21,7 +21,7 @@
     text-align: center;
 padding: 0rem;
   text-decoration: none;
-  text-decoration-color: darkgreen;
+  
 }
 #wavy{
   text-decoration-style: wavy;

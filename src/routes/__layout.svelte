@@ -1,4 +1,4 @@
-
+<body>
 
 
  <script context="module">
@@ -23,15 +23,34 @@
 export let settings
 let set = settings.settings
 
-</script>
 
- <Header blogTitle={set.title} />
+
+
+let bgcolor = set.colorpickerbg;
+let textcolor = set.colorpickertext;
+let linkcolor = set.colorpickerlink;
+let linkcoloralt = set.colorpickerlinkalt;
+let secondarycolor = set.colorpickersecondarycolor;
+
+console.log(bgcolor,textcolor,linkcolor,linkcoloralt,secondarycolor)
+
+</script>
+<div style="--primary-color: {bgcolor}; --text-color: {textcolor}; --link-color: {linkcolor}; --link-color-alt: {linkcoloralt}; --link-color-alt: {secondarycolor}; position: relative;">
+
+ <Header />
+
+ 
+
+
+
+
 <Sidebar />
   <main style="padding: 1em"><slot /></main>
 
 
 <Footer />
 
+</div>
 
 
 
@@ -41,25 +60,58 @@ let set = settings.settings
 
   /* Default Variables */
 
+
+
+#floatingRectangle {
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  height: 100px;
+ 
+  padding: 0;
+}
+
  
   :root {
+
+  
+    
+  
    
     --desktop-font-size: 1.1rem/1.25 !important;
     --mobile-font-size: 1rem/1.3 !important;
-    --text-color: darkgreen !important;
-    --link-color: #025939 !important;
-    --link-color-alt: #03A63C !important;
-    --primary-color: #03A63C !important;
-    --secondary-color: teal !important;
+    --text-color: {textcolor} !important;
+    --link-color: {linkcolor} !important;
+    --link-color-alt: {linkcoloralt} !important;
+    --primary-color: {bgcolor} !important;
+    --secondary-color: {secondarycolor} !important;
     --tertiary-color: whitesmoke !important;
   }
+
+   :global(body) {
+      background: var(--primary-color);
+
+    }
   /* Linked Header Colors */
-  :global(h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited) {
+ :global(p) {
     color: var(--text-color);
+  }
+
+
+  :global(h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited, li) {
+    color: var(--link-color);
   }
   :global(h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus) {
     color: var(--link-color-alt);
   }
+   
+  
+   :global(th) {
+    background: var(--secondary-color);
+  }
+
   /* Dark Mode Variables */
   @media (prefers-color-scheme: dark) {
     :root {
@@ -70,10 +122,7 @@ let set = settings.settings
       --secondary-color: black;
       --tertiary-color: #121923;
     }
-    :global(body) {
-      background: #fffff0;
-
-    }
+   
 
   }
 
@@ -82,3 +131,4 @@ let set = settings.settings
  
 
 </style>
+</body>

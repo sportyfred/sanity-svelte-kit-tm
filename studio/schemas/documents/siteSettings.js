@@ -37,24 +37,78 @@ export default {
       }
     },
     
-    {
-  title: "Color List",
-  description: "Pick a color",
-  name: "colors",
-  type: "colorlist", // required
+   
+{
+ title: "Background color",
+  name: "colorpickerbg",
+  type: "string",
+  inputComponent: ColorPicker,
   options: {
     list: [
+      { title: "Yellow", value: "#f5c701" },
+      { title: "Pink", value: "#f6cedb" },
       { title: "Red", value: "#f16d70" },
       { title: "Teal", value: "#88c6db" },
       { title: "Purple", value: "#aca0cc" },
       { title: "Green", value: "#bdcdcb" },
-      { title: "White", value: "white" }
+      { title: "White", value: "#fff" }
     ]
   }
 },
 {
- title: "Color Picker",
-  name: "colorpicker",
+ title: "Text color",
+  name: "colorpickertext",
+  type: "string",
+  inputComponent: ColorPicker,
+  options: {
+    list: [
+      { title: "Yellow", value: "#f5c701" },
+      { title: "Pink", value: "#f6cedb" },
+      { title: "Red", value: "#f16d70" },
+      { title: "Teal", value: "#88c6db" },
+      { title: "Purple", value: "#aca0cc" },
+      { title: "Green", value: "#bdcdcb" },
+      { title: "White", value: "#fff" }
+    ]
+  }
+},
+{
+ title: "Link color",
+  name: "colorpickerlink",
+  type: "string",
+  inputComponent: ColorPicker,
+  options: {
+    list: [
+      { title: "Yellow", value: "#f5c701" },
+      { title: "Pink", value: "#f6cedb" },
+      { title: "Red", value: "#f16d70" },
+      { title: "Teal", value: "#88c6db" },
+      { title: "Purple", value: "#aca0cc" },
+      { title: "Green", value: "#bdcdcb" },
+      { title: "White", value: "#fff" }
+    ]
+  }
+},
+{
+ title: "Link color focus",
+  name: "colorpickerlinkalt",
+  type: "string",
+  inputComponent: ColorPicker,
+  options: {
+    list: [
+      { title: "Yellow", value: "#f5c701" },
+      { title: "Pink", value: "#f6cedb" },
+      { title: "Red", value: "#f16d70" },
+      { title: "Teal", value: "#88c6db" },
+      { title: "Purple", value: "#aca0cc" },
+      { title: "Green", value: "#bdcdcb" },
+      { title: "White", value: "#fff" }
+    ]
+  }
+},
+{
+ title: "Table header color",
+  name: "colorpickersecondarycolor",
   type: "string",
   inputComponent: ColorPicker,
   options: {

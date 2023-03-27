@@ -28,29 +28,28 @@ $: pathname = $page.url.pathname;
     margin: 0;
     padding: 0rem;
   }
- 
-  a {
-    
- 
 
- background: url("https://ewebdesign.com/wp-content/themes/ewebdesign/assets/img/wave.svg");
+  a { text-decoration: none;}
+ 
+  h2 {
+    text-decoration: none;
   background-repeat: repeat;
   background-position-x: 0%;
   background-position-y: 0%;
   background-size: auto auto;
   background-repeat: repeat-x;
-  background-size: 16px 8px; 
+  background-size: 16px 18px; 
   background-position: 2px 19px;
   animation: move 15s linear infinite;
   -webkit-animation: move 15s linear infinite;
   animation-play-state: paused;
-  text-decoration: none;
+
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 
 }
 
-a:hover {
+h2:hover {
   animation-play-state: running;
 }
 
@@ -75,11 +74,6 @@ from {
 
 li{ display:inline-block; padding: 1rem; }
 
-li.active a {
-    
-     background-color: darkgreen;
-           
-  }
 
   nav {
     display: flex;
