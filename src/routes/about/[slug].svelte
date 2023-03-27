@@ -12,7 +12,9 @@
     
 </script>
 
-
+{#if author.bio}
+<h2>{author.name}</h2>
+{/if}
 
 {#if author.bio}
   <PortableText
@@ -151,7 +153,7 @@ only screen and (max-width: 760px),
   td{ 
     /* Behave  like a "row" */
     border: none;
-    
+   
     position: relative;
         padding-left: 25%; 
     
@@ -160,8 +162,8 @@ only screen and (max-width: 760px),
 
  
 .year {
-   padding-left: 0%; 
-  font-weight: bold;
+   padding-left: 2%; 
+ font-size: 80%;
   position: absolute;
 }
 
