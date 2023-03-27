@@ -18,7 +18,6 @@
   import Footer from '$lib/Footer.svelte'
    import Sidebar from '$lib/Sidebar.svelte'
 
-  
 
 export let settings
 let set = settings.settings
@@ -32,10 +31,21 @@ let linkcolor = set.colorpickerlink;
 let linkcoloralt = set.colorpickerlinkalt;
 let secondarycolor = set.colorpickersecondarycolor;
 
-console.log(bgcolor,textcolor,linkcolor,linkcoloralt,secondarycolor)
+  let styles = 'color: blue; background-color: #f2f2f2; background: #f2f2f2;';
 
 </script>
-<div style="--primary-color: {bgcolor}; --text-color: {textcolor}; --link-color: {linkcolor}; --link-color-alt: {linkcoloralt}; --link-color-alt: {secondarycolor}; position: relative;">
+
+
+
+<div style="--desktop-font-size: 1.2rem/1.25 !important;
+    --mobile-font-size: 1rem/1.3 !important;
+    --text-color: {textcolor} !important;
+    --link-color: {linkcolor} !important;
+    --link-color-alt: {linkcoloralt} !important;
+    --primary-color: {bgcolor} !important;
+    --secondary-color: {secondarycolor} !important;
+    --tertiary-color: whitesmoke !important;">
+ 
 
  <Header />
 
@@ -45,12 +55,12 @@ console.log(bgcolor,textcolor,linkcolor,linkcoloralt,secondarycolor)
 
 
 <Sidebar />
-  <main style="padding: 1em"><slot /></main>
+  <main style="padding: 1em;"><slot /></main>
 
 
 <Footer />
-
 </div>
+
 
 
 
@@ -62,25 +72,16 @@ console.log(bgcolor,textcolor,linkcolor,linkcoloralt,secondarycolor)
 
 
 
-#floatingRectangle {
-  z-index: 1;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 20px;
-  height: 100px;
- 
-  padding: 0;
-}
+
 
  
   :root {
 
   
     
-  
+
    
-    --desktop-font-size: 1.1rem/1.25 !important;
+    --desktop-font-size: 1.2rem/1.25 !important;
     --mobile-font-size: 1rem/1.3 !important;
     --text-color: {textcolor} !important;
     --link-color: {linkcolor} !important;
@@ -88,10 +89,13 @@ console.log(bgcolor,textcolor,linkcolor,linkcoloralt,secondarycolor)
     --primary-color: {bgcolor} !important;
     --secondary-color: {secondarycolor} !important;
     --tertiary-color: whitesmoke !important;
-  }
 
+  }
+ 
+  
    :global(body) {
-      background: var(--primary-color);
+      background-color: var(--primary-color);
+       background: var(--primary-color);
 
     }
   /* Linked Header Colors */

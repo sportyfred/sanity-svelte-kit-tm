@@ -39,6 +39,8 @@ time, mark, audio, video {
 /* Typography */
 body {
     color: var(--text-color);
+    background-color: var(--primary-color);
+     background: var(--primary-color);
     margin: 0 auto;
     max-width: 75ch;
     padding: 0 0.5rem;
