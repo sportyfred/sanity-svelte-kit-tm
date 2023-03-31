@@ -155,7 +155,7 @@ only screen and (max-width: 760px),
     border: none;
    
     position: relative;
-        padding-left: 25%; 
+        padding-left: 30%; 
     
   }
   
