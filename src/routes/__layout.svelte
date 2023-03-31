@@ -251,8 +251,8 @@ sup { font-size: 80%; vertical-align: top; }
 
     }
     input:focus, input:active {
-        background-color: var(--text-color);
-        color: var(--secondary-color);
+        background-color: var(--text-color-d);
+        color: var(--secondary-color-d);
     }
     table,
     table tr,
