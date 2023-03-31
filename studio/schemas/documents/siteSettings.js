@@ -122,6 +122,91 @@ export default {
       { title: "White", value: "#fff" }
     ]
   }
+},
+{
+ title: "Dark Background color",
+  name: "colorpickerbgd",
+  type: "string",
+  inputComponent: ColorPicker,
+  options: {
+    list: [
+      { title: "Yellow", value: "#f5c701" },
+      { title: "Pink", value: "#f6cedb" },
+      { title: "Red", value: "#f16d70" },
+      { title: "Teal", value: "#88c6db" },
+      { title: "Purple", value: "#aca0cc" },
+      { title: "Green", value: "#bdcdcb" },
+      { title: "White", value: "#fff" }
+    ]
+  }
+},
+{
+ title: "Dark Text color",
+  name: "colorpickertextd",
+  type: "string",
+  inputComponent: ColorPicker,
+  options: {
+    list: [
+      { title: "Yellow", value: "#f5c701" },
+      { title: "Pink", value: "#f6cedb" },
+      { title: "Red", value: "#f16d70" },
+      { title: "Teal", value: "#88c6db" },
+      { title: "Purple", value: "#aca0cc" },
+      { title: "Green", value: "#bdcdcb" },
+      { title: "White", value: "#fff" }
+    ]
+  }
+},
+{
+ title: "Dark Link color",
+  name: "colorpickerlinkd",
+  type: "string",
+  inputComponent: ColorPicker,
+  options: {
+    list: [
+      { title: "Yellow", value: "#f5c701" },
+      { title: "Pink", value: "#f6cedb" },
+      { title: "Red", value: "#f16d70" },
+      { title: "Teal", value: "#88c6db" },
+      { title: "Purple", value: "#aca0cc" },
+      { title: "Green", value: "#bdcdcb" },
+      { title: "White", value: "#fff" }
+    ]
+  }
+},
+{
+ title: "Dark ink color focus",
+  name: "colorpickerlinkaltd",
+  type: "string",
+  inputComponent: ColorPicker,
+  options: {
+    list: [
+      { title: "Yellow", value: "#f5c701" },
+      { title: "Pink", value: "#f6cedb" },
+      { title: "Red", value: "#f16d70" },
+      { title: "Teal", value: "#88c6db" },
+      { title: "Purple", value: "#aca0cc" },
+      { title: "Green", value: "#bdcdcb" },
+      { title: "White", value: "#fff" }
+    ]
+  }
+},
+{
+ title: "Dark table header color",
+  name: "colorpickersecondarycolord",
+  type: "string",
+  inputComponent: ColorPicker,
+  options: {
+    list: [
+      { title: "Yellow", value: "#f5c701" },
+      { title: "Pink", value: "#f6cedb" },
+      { title: "Red", value: "#f16d70" },
+      { title: "Teal", value: "#88c6db" },
+      { title: "Purple", value: "#aca0cc" },
+      { title: "Green", value: "#bdcdcb" },
+      { title: "White", value: "#fff" }
+    ]
+  }
 }
   ]
 }
