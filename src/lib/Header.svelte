@@ -14,7 +14,7 @@
  
 
 
-  <img src="https://cdn.sanity.io/images/i4hcircn/production/99eac5453945500b5dfecb0e3e1d70a5f6c5d3f9-1000x1000.png" align="center">
+  <img src="https://cdn.sanity.io/images/i4hcircn/production/99eac5453945500b5dfecb0e3e1d70a5f6c5d3f9-1000x1000.png">
 </header>
 
 <style>header{
@@ -31,6 +31,7 @@ padding: 0rem;
 }
 
 img {
+margin: 0px;
   padding: 0rem;
   height: 25vh;
   margin-left: auto;
@@ -42,7 +43,7 @@ justify-content: center;
 
 img {
   padding: 0rem;
-  height: 45vh;
+  height: 40vh;
   margin-left: auto;
   margin-right: auto;
 
