@@ -37,11 +37,16 @@ export let dlinkcolor = set.colorpickerlinkd;
 export let dlinkcoloralt = set.colorpickerlinkaltd;
 export let dsecondarycolor = set.colorpickersecondarycolord;
 
+export let fontfamily = set.fontfamily;
+export let dfs = set.dfs;
+export let mfs = set.mfs;
+
 </script>
 
 
-<body style="--desktop-font-size: 1.2rem/1.25 !important;
-    --mobile-font-size: 1rem/1.3 !important;
+<body style="--font-family: {fontfamily} !important;
+--desktop-font-size:{dfs} !important;
+    --mobile-font-size: {mfs} !important;
     --text-color: {textcolor} !important;
     --link-color: {linkcolor} !important;
     --link-color-alt: {linkcoloralt} !important;
@@ -55,7 +60,10 @@ export let dsecondarycolor = set.colorpickersecondarycolord;
     --link-color-alt-d: {dlinkcoloralt} !important;
     --primary-color-d: {dbgcolor} !important;
     --secondary-color-d: {dsecondarycolor} !important;
-        font-family: Montserrat;">
+       
+      
+
+        ">
         
 <style>d/* Reset */
 html, body, div, span, applet, object, iframe,
@@ -87,8 +95,9 @@ time, mark, audio, video {
 :root {
  
    
-    --desktop-font-size: 1.2rem/1.25 !important;
-    --mobile-font-size: 1rem/1.3 !important;
+--font-family: {fontfamily} !important;
+--desktop-font-size:{dfs} !important;
+    --mobile-font-size: {mfs} !important;
     --text-color: {textcolor} !important;
     --link-color: {linkcolor} !important;
     --link-color-alt: {linkcoloralt} !important;

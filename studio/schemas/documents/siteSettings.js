@@ -36,7 +36,21 @@ export default {
         layout: 'tags'
       }
     },
-    
+     {
+      name: 'fontfamily',
+      type: 'string',
+      title: 'Font Family'
+    },
+       {
+      name: 'dfs',
+      type: 'string',
+      title: 'Desktop font size'
+    },
+       {
+      name: 'mfs',
+      type: 'string',
+      title: 'Mobile font size'
+    },
    
 {
  title: "Background color",

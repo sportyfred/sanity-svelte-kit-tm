@@ -13,7 +13,7 @@
 </script>
 
 {#if author.bio}
-<h2>{author.name}</h2>
+<h3>{author.name}</h3>
 {/if}
 
 {#if author.bio}

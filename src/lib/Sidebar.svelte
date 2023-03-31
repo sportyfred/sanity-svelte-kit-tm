@@ -92,7 +92,7 @@ li{ display:inline-block; padding: 1rem; }
 
   @media (prefers-color-scheme: dark) { 
  li.active a {
- color: white;}
+ color: --text-color-d;}
   }
 
   </style>
