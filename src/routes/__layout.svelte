@@ -177,7 +177,7 @@ code pre , pre code { border: 0; padding: 0; }
 
 /* Elements */
 hr {
-    background: var(--text-color);
+    
     border: 0;
     height: 1px;
     margin: 4rem 0;
@@ -218,7 +218,7 @@ table caption { margin: 2rem 0; }
 table tr { border-bottom: 1px solid var(--primary-color); }
 table thead { position: sticky; top: 0; }
 table tbody tr:nth-child(even) { background: var(--tertiary-color); }
-table th { background: var(--secondary-color); font-weight: bold; }
+table th {  font-weight: bold; }
 table th, table td { padding: 0.5rem; }
 
 input { 
@@ -262,7 +262,7 @@ sup { font-size: 80%; vertical-align: top; }
     }
     table thead th,
     table tfoot th {
-        background-color: var(--secondary-color-d);
+        
     }
 
        a,a:visited { color: var(--link-color-d); }
