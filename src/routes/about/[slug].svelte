@@ -170,9 +170,7 @@ only screen and (max-width: 760px),
  }
 
  th {
- text-align:center;
- color: white;
-background-color: #8db69f;
+ text-align:left;
  padding: 20px;}
  </style>
 
