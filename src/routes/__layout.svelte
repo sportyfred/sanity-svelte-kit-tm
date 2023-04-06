@@ -272,6 +272,7 @@ sup { font-size: 80%; vertical-align: top; }
     table tfoot th {
         
     }
+    table tbody tr:nth-child(even) { background: var(--secondary-color-d); }
 
        a,a:visited { color: var(--link-color-d); }
 a:hover,a:focus { color: var(--link-color-alt-d); }
