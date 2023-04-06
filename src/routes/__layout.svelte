@@ -216,7 +216,7 @@ dl dd { padding-left: 2rem; }
 
 
 table {
-    border: 1px solid var(--primary-color);
+   
     border-collapse: collapse;
     table-layout: fixed;
     text-align: left;
