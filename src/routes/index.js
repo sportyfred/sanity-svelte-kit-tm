@@ -5,6 +5,7 @@ import {client} from '$lib/sanityClient'
 export async function get() {
   const data = await client.fetch(/* groq */ `{
 		"posts": ${getPostsQuery()},
+    "frontpage": *[],
 		"authors": *[_type == "author" && defined(slug.current)] {
 			${AUTHOR_CARD_FRAGMENT}
 		}

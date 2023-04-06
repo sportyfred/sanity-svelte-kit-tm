@@ -12,11 +12,10 @@
 
 
   {#each posts as post (post.slug.current)}
-{#each post.categories as category}
-{#if category.title == "Works"}
+
  <PostCard {post} />
-{/if}
-{/each}
+
+
 
    
   
@@ -33,4 +32,5 @@
    gap: 3rem 2rem;
     margin-top: 3rem;
   }
+
 </style>

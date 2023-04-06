@@ -1,5 +1,6 @@
 <script>
   import {PortableText} from '@portabletext/svelte'
+
   import Code from '$lib/Code.svelte'
   import Link from '$lib/Link.svelte'
   import ImageBlock from '$lib/ImageBlock.svelte'
@@ -31,10 +32,11 @@
     }}
   />
 {/if}
-
+<hr />
 <h4>CV</h4>
 
 <table style="table-layout: auto;">
+<tbody>
   <th colspan="4">Educations</th>
 
  {#each author.studier.rows as row}

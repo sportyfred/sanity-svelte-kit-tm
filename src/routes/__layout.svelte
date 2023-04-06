@@ -176,12 +176,19 @@ code, pre {
 code pre , pre code { border: 0; padding: 0; }
 
 /* Elements */
-hr {
-    
-    border: 0;
+
+
+hr{
+color: black;
+   content: '∿∿∿∿∿∿∿∿';
+    /* Ratio -> font-size/letter-spacing = 6.25 */
+    letter-spacing: -9.6px;
+    font-size: 60px;
+
     height: 1px;
     margin: 4rem 0;
 }
+
 
 img {
     display: block;
@@ -206,6 +213,7 @@ li > ul, li > ol { margin: 0.25rem 0 0.5rem; padding: 0 0 0 2rem; }
 li > ul li, li > ol li { margin-bottom: 0.5rem; }
 
 dl dd { padding-left: 2rem; }
+
 
 table {
     border: 1px solid var(--primary-color);

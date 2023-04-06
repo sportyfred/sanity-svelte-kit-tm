@@ -1,26 +1,56 @@
 <script>
-  import AuthorCard from '$lib/AuthorCard.svelte'
+
   import PostsGrid from '$lib/PostsGrid.svelte'
+import {PortableText} from '@portabletext/svelte'
+
+  import Code from '$lib/Code.svelte'
+  import Link from '$lib/Link.svelte'
+  import ImageBlock from '$lib/ImageBlock.svelte'
+  import AuthorBlock from '$lib/AuthorBlock.svelte'
+    import SanityImage from '$lib/SanityImage.svelte'
+  import YoutubeBlock from '$lib/YoutubeBlock.svelte' 
+  import SoundCloudBlock from '$lib/SoundCloudBlock.svelte'
+    import VimeoBlock from '$lib/VimeoBlock.svelte'
+  
 
   export let posts
   export let authors
+export let frontpage
+let page = frontpage[0]
 
 
 
 </script>
 
-<svelte:head>
-  <title>tm</title>
-</svelte:head>
-<div><!--
-<h2 style="line-height: 0.7; margin: 0rem 0;">Senaste</h2>
-<h2 style="line-height: 0.7; font-weight: normal; margin: 0rem 0;">
-Latest
-</h2>
--->
+
+
+{#if page.image}
+  <SanityImage image={page.image} />
+{/if}
+{#if page.body}
+<PortableText
+  value={page.body}
+  components={{
+    types: {
+      youtube: YoutubeBlock,
+      soundcloud: SoundCloudBlock,
+      vimeo: VimeoBlock,
+      code: Code,
+      image: ImageBlock,
+      authorReference: AuthorBlock
+    },
+    marks: {
+      link: Link
+    }
+  }}
+/>
+{/if}
+<hr />
+<h4 style="line-height: 0.7; margin: 0rem 0;">Recent works</h4>
+
+
 <PostsGrid {posts} />
 
 
 
 
-</div>

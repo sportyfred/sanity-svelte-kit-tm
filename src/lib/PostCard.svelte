@@ -10,10 +10,10 @@
  {category.title} 
  </p>
    {/each}</div> -->
-   {#if post.subtitle}<h4 style="line-height: 0.7; font-weight: normal; margin: 0rem 0;">
+   {#if post.subtitle}<h4 style="line-height: 1; font-weight: normal; margin: 0rem 0;">
 <a rel="prefetch" href="/blog/{post.slug.current}">{post.subtitle}</a>
 </h4>{/if}
-<h4 style="line-height: 0.9; margin: 0rem 0;"><a rel="prefetch" href="/blog/{post.slug.current}">{post.title}</a></h4>
+<h4 style="line-height: 1; margin: 0rem 0;"><a rel="prefetch" href="/blog/{post.slug.current}">{post.title}</a></h4>
 
   {#if post.image}
     <div class="image">
