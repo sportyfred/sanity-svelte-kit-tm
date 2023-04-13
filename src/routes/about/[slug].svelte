@@ -33,7 +33,6 @@
   />
 {/if}
 <hr />
-<h4>CV</h4>
 
 <table style="table-layout: auto;">
 <tbody>
