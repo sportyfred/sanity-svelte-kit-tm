@@ -227,7 +227,7 @@ table tr { border-bottom: 1px solid var(--primary-color); }
 table thead { position: sticky; top: 0; }
 table tbody tr:nth-child(even) { background: var(--tertiary-color); }
 table th {  font-weight: bold; }
-table th, table td { padding: 0.5rem; }
+table td { padding: 0.5rem; }
 
 input { 
     appearance: none; 
