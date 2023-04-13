@@ -32,7 +32,6 @@
     }}
   />
 {/if}
-<hr />
 
 <table style="table-layout: auto;">
 <tbody>
