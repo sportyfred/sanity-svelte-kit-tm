@@ -39,7 +39,7 @@
 
 
 
-  <th text-align="left" colspan="4">Exhibitions</th>
+  <th colspan="4">Exhibitions</th>
 
  {#each author.utstallningar.rows as row}
 
