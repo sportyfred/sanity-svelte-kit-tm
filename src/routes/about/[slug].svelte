@@ -37,16 +37,7 @@
 
 <table style="table-layout: auto;">
 <tbody>
-  <th colspan="4">Educations</th>
 
- {#each author.studier.rows as row}
- <tr>
-     
-    <td class="year">{row.cells[0]}</td>
-<td colspan="2">{row.cells[1]}</td>
-<td>{row.cells[2]}</td>
-  </tr>
-  {/each}
 
 
   <th colspan="4">Exhibitions</th>
