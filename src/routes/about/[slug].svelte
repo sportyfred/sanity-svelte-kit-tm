@@ -33,7 +33,7 @@
   />
 {/if}
 
-{if author.utstallningar}
+{#if author.utstallningar}
 <Table />
 {/if}
  <style>
