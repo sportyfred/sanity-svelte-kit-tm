@@ -1,5 +1,5 @@
 <script>
-export let { author } = $props();
+export let author
 
 </script>
 
