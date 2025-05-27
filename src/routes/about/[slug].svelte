@@ -34,7 +34,9 @@
 {/if}
 
 {#if author.utstallningar}
-<Table />
+<Table 
+value={author.utstallningar}
+/>
 {/if}
  <style>
 
