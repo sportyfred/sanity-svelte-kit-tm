@@ -1,5 +1,5 @@
 <script>
-export let author
+export let value
 
 </script>
 
@@ -10,7 +10,7 @@ export let author
 
   <th colspan="4">Exhibitions</th>
 
- {#each author.utstallningar.rows as row}
+ {#each value.utstallningar.rows as row}
 
  
 
@@ -38,7 +38,7 @@ export let author
  
   <th colspan="4">Publications</th>
 
- {#each author.publikationer.rows as row}
+ {#each value.publikationer.rows as row}
  
 
 
@@ -66,7 +66,7 @@ export let author
  
   <th colspan="4">Grants</th>
 
- {#each author.stipendier.rows as row}
+ {#each value.stipendier.rows as row}
  {#if row.cells[1]!==''}
  <tr>
      
@@ -90,3 +90,47 @@ export let author
   </tr>{/if}
   {/each}
  </table>
+
+ <style>
+
+ @media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+  }
+  
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  tr { border: 1px solid #ccc; }
+  
+  td{ 
+    /* Behave  like a "row" */
+    border: none;
+   
+    position: relative;
+        padding-left: 30%; 
+    
+  }
+  
+
+ 
+.year {
+   padding-left: 2%; 
+ font-size: 80%;
+  position: absolute;
+}
+
+ }
+
+ th {
+ text-align:left;
+ padding: 20px;}
+ </style>
