@@ -32,6 +32,7 @@
     }}
   />
 {/if}
+{#if author.utstallningar}
 
 <table style="table-layout: auto;">
 <tbody>
@@ -120,6 +121,7 @@
   </tr>{/if}
   {/each}
  </table>
+{/if}
 
  <style>
 
