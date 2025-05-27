@@ -27,4 +27,5 @@ export const AUTHOR_CARD_FRAGMENT = `
 name,
 slug,
 image,
+bio
 `
