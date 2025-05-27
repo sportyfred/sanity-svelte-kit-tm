@@ -4,7 +4,7 @@ import {client} from '$lib/sanityClient'
 // Gets a specific author from its slug.current value
 export async function get({params: {slug}}) {
   const author =
-    await client.fetch(/* groq */ `*[_type == "author" && slug.current == "${slug}"][0]{
+    await client.fetch(/* groq */ `*[_type == "author" && slug.current == "${slug}"]{
     ...,
 		"posts": ${getPostsQuery(`
 			// Get every post that includes the current document _id in its authors[]
