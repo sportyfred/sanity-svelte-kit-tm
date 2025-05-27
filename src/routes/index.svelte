@@ -45,7 +45,7 @@ let page = frontpage[0]
   }}
 />
 {/if}
-<hr />
+
 
 
 
