@@ -1,7 +1,6 @@
 <script>
-export let table
+export let author
 
-  $: ({author} = table.value)
 </script>
 
 <table style="table-layout: auto;">
