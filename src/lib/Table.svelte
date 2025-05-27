@@ -1,3 +1,9 @@
+<script>
+export let table
+
+  $: ({author} = table.value)
+</script>
+
 <table style="table-layout: auto;">
 <tbody>
 
