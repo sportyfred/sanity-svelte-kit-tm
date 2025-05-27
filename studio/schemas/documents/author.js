@@ -4,7 +4,7 @@ export default {
   name: 'author',
   type: 'document',
   icon: UserIcon,
-  title: 'Author',
+  title: 'About',
   fields: [
     {
       name: 'name',
