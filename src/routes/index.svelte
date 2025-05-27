@@ -46,10 +46,7 @@ let page = frontpage[0]
 />
 {/if}
 <hr />
-<h4 style="line-height: 0.7; margin: 0rem 0;">Recent works</h4>
 
-
-<PostsGrid {posts} />
 
 
 
