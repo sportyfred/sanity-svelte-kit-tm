@@ -19,13 +19,7 @@ console.log(post.authors)
 </svelte:head>
 
 <h2>{post.title}</h2>
-<p>
-  {new Date(post.publishedAt).toLocaleDateString('swe', {
-  
-    
-    year: 'numeric'
-  })}
-</p>
+
 
 
 
