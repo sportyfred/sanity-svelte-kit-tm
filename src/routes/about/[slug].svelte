@@ -24,7 +24,8 @@
       types: {
         code: Code,
         image: ImageBlock,
-        authorReference: AuthorBlock
+        authorReference: AuthorBlock,
+        soundcloud: SoundcloudBlock
       },
       marks: {
         link: Link
