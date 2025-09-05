@@ -19,12 +19,7 @@ export default {
         {title: 'Bullet', value: 'bullet'},
         {title: 'Numbered', value: 'number'}
       ],
-      marks: {
-        decorators: [
-          {title: 'Strong', value: 'strong'},
-          {title: 'Emphasis', value: 'em'},
-          {title: 'Code', value: 'code'}
-        ],{
+      {
   name: 'soundcloud',
   type: 'object',
   title: 'SoundCloud Embed',
@@ -36,6 +31,12 @@ export default {
     }
   ]
 },
+      marks: {
+        decorators: [
+          {title: 'Strong', value: 'strong'},
+          {title: 'Emphasis', value: 'em'},
+          {title: 'Code', value: 'code'}
+        ],
             annotations: [
           {
             name: 'link',
