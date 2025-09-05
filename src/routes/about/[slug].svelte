@@ -23,20 +23,23 @@ import ImageBlock from '$lib/ImageBlock.svelte'
 {/if}
 
 {#if author.bio}
-  <PortableText
-    value={author.bio}
-    components={{
-      types: {
-        code: Code,
-        image: ImageBlock,
-        authorReference: AuthorBlock,
-        soundcloud: SoundCloudBlock
-      },
-      marks: {
-        link: Link
-      }
-    }}
-  />
+
+<PortableText
+  value={post.body}
+  components={{
+    types: {
+      youtube: YoutubeBlock,
+      soundcloud: SoundCloudBlock,
+      vimeo: VimeoBlock,
+      code: Code,
+      image: ImageBlock,
+      authorReference: AuthorBlock
+    },
+    marks: {
+      link: Link
+    }
+  }}
+/>
 {/if}
 
 {#if author.utstallningar}
