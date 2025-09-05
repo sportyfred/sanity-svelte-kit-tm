@@ -57,7 +57,7 @@ export default {
     },
   {
       name: 'bio',
-      type: 'bioPortableText',
+      type: 'PortableText',
       title: 'Biography'
     },
     
