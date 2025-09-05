@@ -4,7 +4,10 @@
   import Code from '$lib/Code.svelte'
   import Link from '$lib/Link.svelte'
 import ImageBlock from '$lib/ImageBlock.svelte'
- import SoundCloudBlock from '$lib/SoundCloudBlock.svelte'
+   import YoutubeBlock from '$lib/YoutubeBlock.svelte' 
+  import SoundCloudBlock from '$lib/SoundCloudBlock.svelte'
+    import VimeoBlock from '$lib/VimeoBlock.svelte'
+
  
    import AuthorBlock from '$lib/AuthorBlock.svelte'
   import PostsGrid from '$lib/PostsGrid.svelte'
