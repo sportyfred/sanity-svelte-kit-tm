@@ -3,8 +3,10 @@
 
   import Code from '$lib/Code.svelte'
   import Link from '$lib/Link.svelte'
-  import ImageBlock from '$lib/ImageBlock.svelte'
-  import AuthorBlock from '$lib/AuthorBlock.svelte'
+import ImageBlock from '$lib/ImageBlock.svelte'
+ import SoundCloudBlock from '$lib/SoundCloudBlock.svelte'
+ 
+   import AuthorBlock from '$lib/AuthorBlock.svelte'
   import PostsGrid from '$lib/PostsGrid.svelte'
   import SanityImage from '$lib/SanityImage.svelte'
  import Table from '$lib/Table.svelte'
@@ -25,7 +27,7 @@
         code: Code,
         image: ImageBlock,
         authorReference: AuthorBlock,
-        soundcloud: SoundcloudBlock
+        soundcloud: SoundCloudBlock
       },
       marks: {
         link: Link
