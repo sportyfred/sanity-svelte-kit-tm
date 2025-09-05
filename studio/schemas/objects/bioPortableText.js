@@ -36,8 +36,23 @@ export default {
                 name: 'href',
                 type: 'url'
               }
+              
             ]
           }
+          
+          {
+  name: 'soundcloud',
+  type: 'object',
+  title: 'SoundCloud Embed',
+  fields: [
+    {
+      name: 'soundcloudurl',
+      type: 'url',
+      title: 'Soundcloud URL'
+    }
+  ]
+}
+          
         ]
       }
     }
