@@ -19,18 +19,7 @@ export default {
         {title: 'Bullet', value: 'bullet'},
         {title: 'Numbered', value: 'number'}
       ],
-      {
-  name: 'soundcloud',
-  type: 'object',
-  title: 'SoundCloud Embed',
-  fields: [
-    {
-      name: 'soundcloudurl',
-      type: 'url',
-      title: 'Soundcloud URL'
-    }
-  ]
-},
+      
       marks: {
         decorators: [
           {title: 'Strong', value: 'strong'},
@@ -55,7 +44,19 @@ export default {
           
           
         ]
-      }
+      
+    },
+    {
+  name: 'soundcloud',
+  type: 'object',
+  title: 'SoundCloud Embed',
+  fields: [
+    {
+      name: 'soundcloudurl',
+      type: 'url',
+      title: 'Soundcloud URL'
     }
+  ]
+}}
   ]
 }
