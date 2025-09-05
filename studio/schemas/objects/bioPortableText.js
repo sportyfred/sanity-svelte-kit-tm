@@ -24,7 +24,18 @@ export default {
           {title: 'Strong', value: 'strong'},
           {title: 'Emphasis', value: 'em'},
           {title: 'Code', value: 'code'}
-        ],
+        ],{
+  name: 'soundcloud',
+  type: 'object',
+  title: 'SoundCloud Embed',
+  fields: [
+    {
+      name: 'soundcloudurl',
+      type: 'url',
+      title: 'Soundcloud URL'
+    }
+  ]
+},
             annotations: [
           {
             name: 'link',
@@ -38,20 +49,9 @@ export default {
               }
               
             ]
-          },
+          }
           
-          {
-  name: 'soundcloud',
-  type: 'object',
-  title: 'SoundCloud Embed',
-  fields: [
-    {
-      name: 'soundcloudurl',
-      type: 'url',
-      title: 'Soundcloud URL'
-    }
-  ]
-}
+          
           
         ]
       }
