@@ -25,7 +25,7 @@ import ImageBlock from '$lib/ImageBlock.svelte'
 {#if author.bio}
 
 <PortableText
-  value={post.body}
+  value={author.bio}
   components={{
     types: {
       youtube: YoutubeBlock,
