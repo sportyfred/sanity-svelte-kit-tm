@@ -55,6 +55,15 @@ export default {
     // as a block type.
     {
       type: 'image',
+      fields: [
+    {
+      name: 'link',
+      type: 'url',
+      options: {
+        isHighlighted: true
+      }
+    }
+  ],
       options: {hotspot: true}
     },
     {type: 'youtube'},
