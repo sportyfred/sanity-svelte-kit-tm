@@ -8,7 +8,7 @@
  
 </script>
 
-<iframe width="100%" height="165" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url={url}&color=ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false"></iframe>
+<iframe width="100%" height="120" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url={url}&color=ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false"></iframe>
 <!-- 
 
 <SoundCloud
