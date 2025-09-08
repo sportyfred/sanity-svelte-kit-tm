@@ -12,6 +12,6 @@
 
 <SoundCloud
   height="120"
-  soundcloudLink="{url}"
+  soundcloudLink="{url}&show_artwork=false&color=61b183&show_teaser=false"
 />
 
