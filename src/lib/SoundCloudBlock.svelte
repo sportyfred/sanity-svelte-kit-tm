@@ -13,5 +13,5 @@
 
 <SoundCloud
   height="165"
-  soundcloudLink="{url}"
+  soundcloudLink="{url}&show_artwork=false"
 />
