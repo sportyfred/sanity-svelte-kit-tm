@@ -8,11 +8,11 @@
  
 </script>
 
-<iframe width="100%" height="120" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url={url}&color=61b183&auto_play=false&show_artwork=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false"></iframe>
-<!-- 
+
 
 <SoundCloud
-  height="165"
-  soundcloudLink="{url}&show_artwork=false"
+  height="120"
+  soundcloudLink="{url}&show_artwork=false&color=61b183"
+disable_observer=true
 />
--->
+
