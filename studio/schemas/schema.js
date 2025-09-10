@@ -19,7 +19,7 @@ import frontpage from './documents/frontpage'
 
 // Object types
 
-import bioPortableText from './objects/bioPortableText'
+
 import excerptPortableText from './objects/excerptPortableText'
 import mainImage from './objects/mainImage'
 import portableText from './objects/portableText'
@@ -44,7 +44,7 @@ export default createSchema({
     frontpage,
     siteSettings,
  
-    bioPortableText,
+    
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     portableText,
