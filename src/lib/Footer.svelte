@@ -1,9 +1,9 @@
-<footer>tm™
+<footer><p class="text-xs">tm™</p>
 </footer>
 
 <style>
   footer {
-    font-size: xx-small;
+    
     text-align: left;
     margin-top: 10vh;
     margin-bottom: 10vh;
