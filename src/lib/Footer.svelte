@@ -1,4 +1,4 @@
-<footer><p class="text-xs text-gray-500">tm™</p>
+<footer><code>tm™</code>
 </footer>
 
 <style>
