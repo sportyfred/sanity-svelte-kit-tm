@@ -125,6 +125,8 @@ body {
     padding: 0 0.5rem;
     font-family: Montserrat;
 }
+footertext {color: var(--secondary-color);
+  }
 body, input {
     font: var(--desktop-font-size) -apple-system,BlinkMacSystemFont,Montserrat,Roboto, Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -258,6 +260,8 @@ sup { font-size: 80%; vertical-align: top; }
 
 
     }
+    footertext {color: var(--secondary-color-d);
+  }
     input:focus, input:active {
         background-color: var(--text-color-d);
         color: var(--secondary-color-d);
