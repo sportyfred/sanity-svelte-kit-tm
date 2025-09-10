@@ -18,7 +18,7 @@ import ImageBlock from '$lib/ImageBlock.svelte'
     
 </script>
 
-{#if author.bio}
+{#if author.name}
 <h3>{author.name}</h3>
 {/if}
 
@@ -42,9 +42,5 @@ import ImageBlock from '$lib/ImageBlock.svelte'
 />
 {/if}
 
-{#if author.utstallningar}
-<Table 
-value={author}
-/>
-{/if}
+
 
