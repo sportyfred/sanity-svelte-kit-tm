@@ -1,4 +1,4 @@
-<footer>™
+<footer>tm
 </footer>
 
 <style>
