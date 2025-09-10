@@ -32,32 +32,10 @@ export default {
       },
       // Images can have extra fields to annotate the image with supporting content
      
-    },{
-      name: 'studier',
-      title: 'Studier',
-      type: 'table', // Specify 'table' type
-    },
-
-      {
-      name: 'utstallningar',
-      title: 'Utställningar',
-      type: 'table', // Specify 'table' type
-    },
-
-      {
-      name: 'publikationer',
-      title: 'Publikationer',
-      type: 'table', // Specify 'table' type
-    },
-
-      {
-      name: 'stipendier',
-      title: 'Stipendier',
-      type: 'table', // Specify 'table' type
     },
   {
       name: 'bio',
-      type: 'bioPortableText',
+      type: 'PortableText',
       title: 'Biography'
     },
     
