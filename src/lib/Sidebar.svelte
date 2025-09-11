@@ -34,7 +34,7 @@ $: pathname = $page.url.pathname;
   ul {
     list-style: none;
     margin: 0;
-    padding: 0rem;
+    padding: 0;
   }
 
   a { text-decoration: none;}
@@ -80,7 +80,7 @@ from {
   }
 }
 
-li{ display:inline-block; padding: 1rem; }
+li{ display:inline-block; padding: 0.5rem; }
 
 
   nav {
