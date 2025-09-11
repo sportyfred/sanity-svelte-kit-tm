@@ -80,7 +80,7 @@ from {
   }
 }
 
-li{ display:inline-block; padding: 0.5rem; }
+li{ display:inline-block; padding: 1rem; }
 
 
   nav {
@@ -88,7 +88,7 @@ li{ display:inline-block; padding: 0.5rem; }
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 0em;
+    padding: 0;
   }
   @media screen and (min-width: 400px) {
     nav {
