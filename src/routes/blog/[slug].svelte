@@ -23,7 +23,7 @@ console.log(post.authors)
 
 
 
-<hr />
+
 
 {#if post.image}
   <SanityImage image={post.image} />
