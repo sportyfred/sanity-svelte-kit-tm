@@ -17,7 +17,8 @@
 
   {#if post.image}
     <div class="image">
-      <a rel="prefetch" href="/blog/{post.slug.current}"><SanityImage image={post.image} /></a>
+      <SanityImage image={post.image} />
+
     </div>
   {/if}
 
