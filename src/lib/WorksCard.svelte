@@ -2,7 +2,7 @@
   import SanityImage from './SanityImage.svelte'
   export let post
 </script>
-<a rel="prefetch" href="/blog/{post.slug.current}">
+<a class="card" rel="prefetch" href="/blog/{post.slug.current}">
 <article>
 {#if post.image}
     <div class="image">
@@ -20,6 +20,10 @@
   </a>
  
 <style>
+  .card {
+    text-decoration: none;
+    color: inherit;
+    }
   article {
     display: flex;
     /* Show images first */
