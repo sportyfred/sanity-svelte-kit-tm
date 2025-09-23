@@ -3,7 +3,7 @@
 
   export let post
 </script>
-
+<a rel="prefetch" href="/blog/{post.slug.current}">
 <article>  <!-- <div class="categories">{#each post.categories as category}
 
 <p class="category">
@@ -11,7 +11,7 @@
  </p>
    {/each}</div> -->
    {#if post.subtitle}<h4 style="line-height: 1; font-weight: normal; margin: 0rem 0;">
-<a rel="prefetch" href="/blog/{post.slug.current}">{post.subtitle}</a>
+{post.subtitle}
 </h4>{/if}
 <h4 style="line-height: 1; margin: 0rem 0;"><a rel="prefetch" href="/blog/{post.slug.current}">{post.title}</a></h4>
 
@@ -24,7 +24,7 @@
 
 
 
-</article>
+</article></a>
  
 <style>
   article {
