@@ -2,26 +2,22 @@
   import SanityImage from './SanityImage.svelte'
   export let post
 </script>
-
-<a
-  rel="prefetch"
-  href="/blog/{post.slug.current}"
-  class="block rounded-lg overflow-hidden transition md:transform md:hover:-translate-y-1 md:hover:shadow-lg md:hover:bg-gray-50"
->
-  <article class="flex flex-col-reverse">
-    {#if post.image}
-      <div class="relative pb-[62.5%]">
-        <SanityImage image={post.image} class="absolute inset-0 w-full h-full object-cover" />
-      </div>
-    {/if}
-
-    {#if post.subtitle}
-      <h4 class="text-base font-normal leading-none m-0">{post.subtitle}</h4>
-    {/if}
-
-    <h4 class="text-lg font-semibold leading-none m-0">{post.title}</h4>
-  </article>
-</a>
+<a rel="prefetch" href="/blog/{post.slug.current}">
+<article>
+{#if post.image}
+    <div class="image">
+      <SanityImage image={post.image} />
+    </div>
+  {/if}
+  
+<h4 style="line-height: 1; margin: 0rem 0;"><a rel="prefetch" href="/blog/{post.slug.current}">{post.title}</a></h4>
+{#if post.subtitle}<h4 style="line-height: 1; font-weight: normal; margin: 0rem 0;">
+{post.subtitle}
+</h4>{/if}
+  
+ 
+</article>
+  </a>
  
 <style>
   article {
