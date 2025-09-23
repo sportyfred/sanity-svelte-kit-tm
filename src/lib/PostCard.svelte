@@ -47,7 +47,7 @@
   .image {
     padding-bottom: 62.5%;
     position: relative;
-    overflow: hidden;
+    
   }
 
   .image :global(img) {
