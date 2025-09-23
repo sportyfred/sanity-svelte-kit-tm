@@ -5,7 +5,7 @@ import {PortableText} from '@portabletext/svelte'
 
   import Code from '$lib/Code.svelte'
   import Link from '$lib/Link.svelte'
-  import ImageBlock from '$lib/ImageBlock.svelte'
+  import ImageBlock from '$lib/ImageBlockFront.svelte'
   import AuthorBlock from '$lib/AuthorBlock.svelte'
     import SanityImage from '$lib/SanityImage.svelte'
   import YoutubeBlock from '$lib/YoutubeBlock.svelte' 
