@@ -40,9 +40,9 @@ export let dsecondarycolor = set.colorpickersecondarycolord;
 export let fontfamily = set.fontfamily;
 export let dfs = set.dfs;
 export let mfs = set.mfs;
-export let footertext = '';
+export let footertextvalue = '';
 if (typeof set.footertext !== 'undefined'){
-  footertext=set.footertext;
+  footertextvalue=set.footertext;
 }
 
 </script>
@@ -309,7 +309,7 @@ a:hover,a:focus { color: var(--link-color-alt-d); }
   <main style="padding: 1em;"><slot /></main>
 
 
-<Footer footertext={footertext} />
+<Footer footertextv={footertextvalue} />
   
 
 </body>
