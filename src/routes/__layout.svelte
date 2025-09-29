@@ -40,10 +40,7 @@ export let dsecondarycolor = set.colorpickersecondarycolord;
 export let fontfamily = set.fontfamily;
 export let dfs = set.dfs;
 export let mfs = set.mfs;
-export let footertextvalue = '';
-if (typeof set.footertext !== 'undefined'){
-  footertextvalue=set.footertext;
-}
+
 
 </script>
 
@@ -308,8 +305,8 @@ a:hover,a:focus { color: var(--link-color-alt-d); }
 <Sidebar />
   <main style="padding: 1em;"><slot /></main>
 
-
-<Footer footertextv={footertextvalue} />
-  
+{#if set.footertext}
+<Footer footertextv={set.footertext} />
+  {/if}
 
 </body>
