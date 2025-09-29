@@ -1,8 +1,8 @@
 <script>
-export let footertextv
+
 </script>
 
-<footer><p class="footertext">{footertextv}</p>
+<footer><p class="footertext">tm</p>
 </footer>
 
 <style>
