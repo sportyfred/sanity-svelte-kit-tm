@@ -13,6 +13,10 @@ export default {
       type: 'string',
       title: 'Title'
     },
+    {name: 'footertext',
+      type: 'string',
+      title: 'Footer text'
+      },
      {
       name: 'image',
       type: 'image',
