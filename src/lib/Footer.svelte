@@ -1,4 +1,8 @@
-<footer><p class="footertext">tm™</p>
+<script>
+export let footertext
+</script>
+
+<footer><p class="footertext">{footertext}</p>
 </footer>
 
 <style>
