@@ -303,8 +303,8 @@ a:hover,a:focus { color: var(--link-color-alt-d); }
 <Sidebar />
   <main style="padding: 1em;"><slot /></main>
 
-{#if set.footertext}
-<Footer footertextv={set.footertext} />
-  {/if}
+
+<Footer />
+  
 
 </body>
