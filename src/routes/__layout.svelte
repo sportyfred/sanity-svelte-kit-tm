@@ -2,7 +2,7 @@
   // Updated for SvelteKit v1+
   export async function load({ fetch }) {
     const settings = await fetch('/settings').then(res => res.json());
-    return { settings };
+    return { props: { settings }};
   }
 </script>
 
