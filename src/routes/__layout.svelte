@@ -305,8 +305,7 @@ a:hover,a:focus { color: var(--link-color-alt-d); }
   <main style="padding: 1em;"><slot /></main>
 
 
-<Footer />
-
-
+<Footer footertext={set.footertext} />
+  
 
 </body>
