@@ -41,7 +41,7 @@ export let fontfamily = set.fontfamily;
 export let dfs = set.dfs;
 export let mfs = set.mfs;
 export let footertext = '';
-if set.footertext(){
+if (typeof set.footertext !== 'undefined'){
   footertext=set.footertext;
 }
 
