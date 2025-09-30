@@ -4,7 +4,7 @@
 
  export let headr
 
-  import SanityImage from './SanityImage.svelte'
+  import SanityImage from './SanityImageHeader.svelte'
 
 
 </script>
