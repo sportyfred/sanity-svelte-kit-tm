@@ -5,7 +5,8 @@ import {client} from '$lib/sanityClient'
 export async function get() {
   const data = await client.fetch(/* groq */ `{
   "settings": *[_type == "siteSettings"][0],
-		"posts": ${getPostsQuery()}
+    "posts": *[]
+		}
   }`)
 
   if (data) {
