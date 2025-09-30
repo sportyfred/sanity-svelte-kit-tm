@@ -12,7 +12,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import author from './documents/author'
 import category from './documents/category'
 import post from './documents/post'
-import footer from './documents/footer'
+import siteFooter from './documents/footer'
 
 import siteSettings from './documents/siteSettings'
 
@@ -45,7 +45,8 @@ export default createSchema({
     frontpage,
     siteSettings,
     bioPortableText,
-    footer,
+    siteFooter,
+    text,
  
     
     // When added to this list, object types can be used as
