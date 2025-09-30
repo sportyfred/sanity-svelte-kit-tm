@@ -15,11 +15,11 @@
  
 {#if headr}
  
-<div class="img">
+
 <a href="/"> <SanityImage image={headr} />
 </a>
  
-  </div> {/if}
+  {/if}
 </header>
 
 <style>header{
