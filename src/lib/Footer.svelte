@@ -8,12 +8,13 @@
       }
     }
 export let footer
+let ftext = footer.footer
 </script>
  
 
 <footer>
-{#if footer.text}
-<p class="footertext">{footer.text}</p>
+{#if ftext.text}
+<p class="footertext">{ftext.text}</p>
 {/if}
 </footer>
 
