@@ -13,9 +13,9 @@ let ftext = footer.footer
  
 
 <footer>
-{#if ftext.text}
-<p class="footertext">{ftext.text}</p>
-{/if}
+
+<p class="footertext">test</p>
+
 </footer>
 
 <style>
