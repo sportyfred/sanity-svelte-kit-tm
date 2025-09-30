@@ -4,7 +4,7 @@
   import {browser} from '$app/env'
 
   export let image
-  export let maxWidth = 800
+  export let maxWidth = 1200
   export let alt = undefined
 
   // Example image document ID: image-cc93b69600f5cd1abce97fd0d4aa71793dbbba76-1350x900-png
