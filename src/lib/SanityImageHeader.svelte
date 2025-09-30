@@ -31,7 +31,7 @@
 {#if browser && image}
   <img
     loading="lazy"
-    src={urlFor(image).width(maxWidth).fit('fit')}
+    src={urlFor(image).width(maxWidth).fit('max')}
     alt={alt || image.alt || ''}
     class:loaded
     bind:this={imageRef}
