@@ -1,7 +1,50 @@
 
-<footer>
 
-<p class="footertext">tm</p>
+
+<script>
+export let footr
+import {PortableText} from '@portabletext/svelte'
+
+  import Code from './Code.svelte'
+  import Link from './Link.svelte'
+  import ImageBlock from './ImageBlockFront.svelte'
+  import AuthorBlock from './AuthorBlock.svelte'
+    import SanityImage from './SanityImage.svelte'
+  import YoutubeBlock from './YoutubeBlock.svelte' 
+  import SoundCloudBlock from './SoundCloudBlock.svelte'
+    import VimeoBlock from './VimeoBlock.svelte'
+
+</script>
+
+<footer>
+{#if footr.text}
+<p class="footertext">{footr.text}</p>
+{/if}
+
+
+
+{#if footr.image}
+  <SanityImage image={footr.image} />
+{/if}
+{#if footr.body}
+<PortableText
+  value={footr.body}
+  components={{
+    types: {
+      youtube: YoutubeBlock,
+      soundcloud: SoundCloudBlock,
+      vimeo: VimeoBlock,
+      code: Code,
+      image: ImageBlock,
+      authorReference: AuthorBlock
+    },
+    marks: {
+      link: Link
+    }
+  }}
+/>
+{/if}
+
 
 </footer>
 

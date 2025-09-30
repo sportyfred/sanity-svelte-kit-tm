@@ -6,6 +6,7 @@ export async function get() {
   const data = await client.fetch(/* groq */ `{
   
 "settings": *[_type == "siteSettings"][0],
+"footer": *[_type == "siteFooter"][0],
 		"posts": ${getPostsQuery()}
   }`)
 

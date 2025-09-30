@@ -18,8 +18,11 @@
 
 
 export let settings
+
 let set = settings.settings
 
+let foot = settings.footer
+let head = set.image
 
 
 
@@ -293,7 +296,7 @@ a:hover,a:focus { color: var(--link-color-alt-d); }
 
 </style>
 
- <Header />
+ <Header headr={head}/>
 
 
 
@@ -304,7 +307,7 @@ a:hover,a:focus { color: var(--link-color-alt-d); }
   <main style="padding: 1em;"><slot /></main>
 
 
-<Footer />
+<Footer footr={foot} />
   
 
 </body>
