@@ -1,12 +1,16 @@
 export default {
-  name: 'frontpage',
+  name: 'siteFooter',
   type: 'document',
-  title: 'Frontpage',
+  title: 'Footer',
   fields: [
     {
       name: 'name',
       type: 'string',
       title: 'Name'
+    },  {
+      name: 'text',
+      type: 'string',
+      title: 'Text'
     },
     {
       name: 'slug',
