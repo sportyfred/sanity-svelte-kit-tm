@@ -4,7 +4,7 @@
 
  export let headr
 
-  import SanityImage from './SanityImageHeader.svelte'
+  import SanityImageHeader from './SanityImageHeader.svelte'
 
 
 </script>
@@ -16,7 +16,7 @@
 {#if headr}
  
 
-<a href="/"> <SanityImage image={headr} />
+<a href="/"> <SanityImageHeader image={headr} />
 </a>
  
   {/if}
@@ -35,7 +35,7 @@ padding: 0rem;
   text-decoration-style: double;
 }
 
-.img {
+img {
 margin: 0px;
   padding: 0rem;
   height: 25vh;
@@ -46,7 +46,7 @@ justify-content: center;
 }
  @media screen and (min-width: 400px) {
 
-.img {
+img {
   padding: 0rem;
   height: 30vh;
   margin-left: auto;
