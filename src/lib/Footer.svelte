@@ -1,8 +1,19 @@
-<script>
-
+<script context="module">
+   export async function load({ fetch }) {
+      const footer = await fetch('/footer').then(res => res.json());
+      return {
+        props: {
+          footer
+        }
+      }
+    }
 </script>
+ 
 
-<footer><p class="footertext">tm</p>
+<footer>
+{#if footer.text}
+<p class="footertext">{footer.text}</p>
+{/if}
 </footer>
 
 <style>
