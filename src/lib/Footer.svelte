@@ -7,6 +7,7 @@
         }
       }
     }
+export let footer
 </script>
  
 
