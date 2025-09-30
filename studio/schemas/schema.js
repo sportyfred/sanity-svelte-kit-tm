@@ -46,7 +46,7 @@ export default createSchema({
     siteSettings,
     bioPortableText,
     siteFooter,
-    text,
+    
  
     
     // When added to this list, object types can be used as
