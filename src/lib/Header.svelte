@@ -23,7 +23,7 @@
 </header>
 
 <style>header{
-  height: 25vh;
+  
     text-align: center;
 padding: 0rem;
   text-decoration: none;
