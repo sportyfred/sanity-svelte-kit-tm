@@ -7,10 +7,11 @@
         }
       }
     }
-export let footer
-let ftext = footer.footer
+
 </script>
- 
+ <script>
+ export let footer
+let ftext = footer.footer</script>
 
 <footer>
 
