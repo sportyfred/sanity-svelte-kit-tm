@@ -4,7 +4,7 @@
   import {browser} from '$app/env'
 
   export let image
-  export let maxWidth = 1200
+  export let maxWidth = 800
   export let alt = undefined
 
   // Example image document ID: image-cc93b69600f5cd1abce97fd0d4aa71793dbbba76-1350x900-png
@@ -42,12 +42,12 @@
 <!-- some optional effects to make image loading look nicer -->
 <style>
   img {
-     height: 25vh;
+     
     opacity: 0;
     transition: opacity 500ms ease-out;
   }
   img.loaded {
-    height: 25vh;
+    
     opacity: 1;
   }
 </style>
