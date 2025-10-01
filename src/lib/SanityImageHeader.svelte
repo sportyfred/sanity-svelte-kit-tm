@@ -43,11 +43,13 @@
 <style>
   img {
      height: 25vh;
+    justify-content: center;
     opacity: 0;
     transition: opacity 500ms ease-out;
   }
   img.loaded {
     height: 25vh;
     opacity: 1;
+    justify-content: center;
   }
 </style>
