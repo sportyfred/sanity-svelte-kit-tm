@@ -37,6 +37,7 @@ padding: 0rem;
 }
 
 img {
+  height: 25vh;
 margin: 0px;
   padding: 0rem;
   height: 25vh;
