@@ -42,7 +42,7 @@
 <!-- some optional effects to make image loading look nicer -->
 <style>
   img {
-     height: 25vh;
+     height: 30vh;
     display: block;        /* make it respect margin */
   margin: 0 auto; 
     opacity: 0;
@@ -51,7 +51,7 @@
   img.loaded {
     display: block;        /* make it respect margin */
   margin: 0 auto; 
-    height: 25vh;
+    height: 30vh;
     opacity: 1;
     justify-content: center;
   }
