@@ -93,13 +93,13 @@ flex-wrap:wrap;
 
   /* Active link styling */
   li.active a {
-    color: var(--text-color);
+    color: currentColor;
     font-weight: bold;
   }
 
   @media (prefers-color-scheme: dark) {
     li.active a {
-      color: var(--text-color-d);
+      color: currentColor;
     }
   }
 </style>
