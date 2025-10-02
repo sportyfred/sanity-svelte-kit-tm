@@ -33,7 +33,7 @@
     padding: 0;
 
     display: flex;
-    flex-direction: column;  /* mobile: stacked */
+     /* mobile: stacked */
     align-items: center;
     gap: 0.25rem;             /* tight vertical spacing */
   }
