@@ -37,10 +37,10 @@ padding: 0rem;
 }
 
 img {
-  height: 25vh;
+  
 margin: 0px;
   padding: 0rem;
-  height: 25vh;
+  
   margin-left: auto;
   margin-right: auto;
 
@@ -50,7 +50,7 @@ justify-content: center;
 
 img {
   padding: 0rem;
-  height: 30vh;
+  
   margin-left: auto;
   margin-right: auto;
 
