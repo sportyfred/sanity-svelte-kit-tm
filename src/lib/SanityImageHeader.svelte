@@ -43,11 +43,14 @@
 <style>
   img {
      height: 25vh;
-    justify-content: center;
+    display: block;        /* make it respect margin */
+  margin: 0 auto; 
     opacity: 0;
     transition: opacity 500ms ease-out;
   }
   img.loaded {
+    display: block;        /* make it respect margin */
+  margin: 0 auto; 
     height: 25vh;
     opacity: 1;
     justify-content: center;
