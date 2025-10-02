@@ -27,15 +27,42 @@
 
 <style>
   ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;       /* allow wrapping */
+  justify-content: center;
+  gap: 0.5rem;           /* control spacing between items */
+}
+
+li {
+  padding: 0.25rem 0.5rem; /* smaller padding for mobile */
+}
+
+/* Mobile: stack vertically */
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+  /* On wider screens, show nav items in a row */
+  nav {
+    flex-direction: row;
+  }
+
+  ul {
+    flex-wrap: nowrap;   /* keep them in one line */
+    gap: 1rem;           /* more breathing room on desktop */
   }
 
   li {
-    display: inline-block;
-    padding: 1rem;
+    padding: 0.5rem 1rem; /* a bit bigger on desktop */
   }
+}
 
   a {
     text-decoration: none;
@@ -72,19 +99,9 @@ li.active h2 {
   to   { background-position: 500px 19px; }
 }
 
-  nav {
-    display: flex;
-    flex-direction: column; /* mobile */
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-  }
+  
 
-  @media screen and (min-width: 400px) {
-    nav {
-      flex-direction: row; /* desktop/tablet */
-    }
-  }
+ 
 
   li.active a {
     color: var(--text-color);
