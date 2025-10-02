@@ -26,86 +26,75 @@
 </nav>
 
 <style>
+  /* reset & base styles */
   ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;       /* allow wrapping */
-  justify-content: center;
-  gap: 0.5rem;           /* control spacing between items */
-}
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-li {
-  padding: 0.25rem 0.5rem; /* smaller padding for mobile */
-}
-
-/* Mobile: stack vertically */
-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-}
-
-@media screen and (min-width: 600px) {
-  /* On wider screens, show nav items in a row */
-  nav {
-    flex-direction: row;
-  }
-
-  ul {
-    flex-wrap: nowrap;   /* keep them in one line */
-    gap: 1rem;           /* more breathing room on desktop */
+    display: flex;
+    flex-direction: column;  /* mobile: stacked */
+    align-items: center;
+    gap: 0.25rem;             /* tight vertical spacing */
   }
 
   li {
-    padding: 0.5rem 1rem; /* a bit bigger on desktop */
+    padding: 0; /* no extra padding, gap handles spacing */
   }
-}
 
   a {
     text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 0.75rem; /* touch-friendly tap area */
   }
 
   h2 {
-  text-decoration: none;
-  background-repeat: repeat-x;
-  background-size: 16px 18px; 
-  background-position: 2px 19px;
-  animation: move 15s linear infinite;
-  animation-play-state: paused; /* default = paused */
-  background-color: transparent;
-}
+    margin: 0;
+    text-decoration: none;
+    background-repeat: repeat-x;
+    background-size: 16px 18px;
+    background-position: 2px 19px;
+    animation: move 15s linear infinite;
+    animation-play-state: paused; /* default = paused */
+    background-color: transparent;
+  }
 
-/* Normal hover effect (fast underline motion) */
-h2:hover {
-  animation-play-state: running;
-  animation-duration: 15s;
-  text-decoration-style: solid;
-}
+  /* Hover effect: fast solid underline animation */
+  h2:hover {
+    animation-play-state: running;
+    animation-duration: 15s;
+    text-decoration-style: solid;
+  }
 
-/* Active link: wavy + slower animation */
-li.active h2 {
-  animation-play-state: running;
-  animation-duration: 40s; /* very subtle */
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: currentColor; /* matches text color */
-}
+  /* Active link: always animating, wavy, slower */
+  li.active h2 {
+    animation-play-state: running;
+    animation-duration: 40s; /* subtle */
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: currentColor;
+  }
 
-@keyframes move {
-  from { background-position: 2px 19px; }
-  to   { background-position: 500px 19px; }
-}
+  /* underline animation keyframes */
+  @keyframes move {
+    from { background-position: 2px 19px; }
+    to   { background-position: 500px 19px; }
+  }
 
-  
+  /* Desktop breakpoint: row layout */
+  @media screen and (min-width: 600px) {
+    ul {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 1rem; /* more breathing room */
+    }
+  }
 
- 
-
+  /* Active link styling */
   li.active a {
     color: var(--text-color);
-    font-weight: bold; /* or whatever active style you want */
+    font-weight: bold;
   }
 
   @media (prefers-color-scheme: dark) {
