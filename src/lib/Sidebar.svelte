@@ -1,106 +1,99 @@
-<script context="module">
-  import {page} from '$app/stores'
-
-</script>
 <script>
+  import { page } from '$app/stores'
 
-let pathname;
-
-$: pathname = $page.url.pathname;
-
- 
-
+  let pathname
+  $: pathname = $page.url.pathname
 </script>
 
 <nav>
-    <ul>
-      <li class={pathname === '/works' ? 'active' : ''}><a href="/works"><h2>works</h2></a></li>
-      
-       <li class={pathname === '/about/tm' ? 'active' : ''}><a href="/about/tm"><h2>bio/cv</h2></a></li>
+  <ul>
+    <li class={pathname === '/works' ? 'active' : ''}>
+      <a href="/works"><h2>works</h2></a>
+    </li>
 
+    <li class={pathname === '/about/tm' ? 'active' : ''}>
+      <a href="/about/tm"><h2>bio/cv</h2></a>
+    </li>
 
-      
-       <li class={pathname === '/about/sound' ? 'active' : ''}><a href="/about/sound"><h2>sound</h2></a></li>
+    <li class={pathname === '/about/sound' ? 'active' : ''}>
+      <a href="/about/sound"><h2>sound</h2></a>
+    </li>
 
+    <li class={pathname === '/about/contact' ? 'active' : ''}>
+      <a href="/about/contact"><h2>contact</h2></a>
+    </li>
+  </ul>
+</nav>
 
-      
-       <li class={pathname === '/about/contact' ? 'active' : ''}><a href="/about/contact"><h2>contact</h2></a></li>
-
-
-    </ul>
-  </nav>
-
-  <style>
+<style>
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
-  a { text-decoration: none;}
- 
-  h2 {
+  li {
+    display: inline-block;
+    padding: 1rem;
+  }
+
+  a {
     text-decoration: none;
-  background-repeat: repeat;
-  background-position-x: 0%;
-  background-position-y: 0%;
-  background-size: auto auto;
+  }
+
+  h2 {
+  text-decoration: none;
   background-repeat: repeat-x;
   background-size: 16px 18px; 
   background-position: 2px 19px;
   animation: move 15s linear infinite;
-  -webkit-animation: move 15s linear infinite;
-  animation-play-state: paused;
-
+  animation-play-state: paused; /* default = paused */
   background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-
 }
 
+/* Normal hover effect (fast underline motion) */
 h2:hover {
   animation-play-state: running;
+  animation-duration: 15s;
+  text-decoration-style: solid;
 }
 
-
-@-webkit-keyframes move {
-from {
-    background-position: 2px 19px;
-  }
-  to {
-    background-position: 500px 19px;
-  }
+/* Active link: wavy + slower animation */
+li.active h2 {
+  animation-play-state: running;
+  animation-duration: 40s; /* very subtle */
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: currentColor; /* matches text color */
 }
 
-@keyframe move {
-from {
-    background-position: 2px 19px;
-  }
-  to {
-    background-position: 500px 19px;
-  }
+@keyframes move {
+  from { background-position: 2px 19px; }
+  to   { background-position: 500px 19px; }
 }
-
-li{ display:inline-block; padding: 1rem; }
-
 
   nav {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: column; /* mobile */
+    justify-content: center;
     align-items: center;
     padding: 0;
   }
+
   @media screen and (min-width: 400px) {
     nav {
-      flex-direction: column;
-      align-items: center;
-      
+      flex-direction: row; /* desktop/tablet */
     }
   }
 
-  @media (prefers-color-scheme: dark) { 
- li.active a {
- color: --text-color-d;}
+  li.active a {
+    color: var(--text-color);
+    font-weight: bold; /* or whatever active style you want */
   }
 
-  </style>
+  @media (prefers-color-scheme: dark) {
+    li.active a {
+      color: var(--text-color-d);
+    }
+  }
+</style>
