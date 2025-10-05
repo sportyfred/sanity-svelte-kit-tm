@@ -15,8 +15,14 @@
 <nav>
   <ul class="flex w-full">
     {#each menuItems as item}
-      <li class="flex-1 text-center" class:active={pathname === item.href}>
-        <a href={item.href} class="block py-1 text-sm sm:text-base">
+      <li
+        class="flex-1 text-center"
+        class:active={pathname === item.href}
+      >
+        <a
+          href={item.href}
+          class="block py-1 text-xs sm:text-sm md:text-base"
+        >
           <h2>{item.name}</h2>
         </a>
       </li>
@@ -25,22 +31,8 @@
 </nav>
 
 <style>
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li a {
-    display: block;
-    text-decoration: none;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-
   h2 {
     margin: 0;
-    font-size: inherit;
     background-repeat: repeat-x;
     background-size: 16px 18px;
     background-position: 2px 19px;
@@ -66,10 +58,5 @@
   @keyframes move {
     from { background-position: 2px 19px; }
     to   { background-position: 500px 19px; }
-  }
-
-  li.active a {
-    font-weight: bold;
-    color: currentColor;
   }
 </style>
