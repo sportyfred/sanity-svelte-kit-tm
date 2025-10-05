@@ -1,4 +1,4 @@
-import { page } from '$app/stores'
+<script>import { page } from '$app/stores'
 
   let pathname
   $: pathname = $page.url.pathname
