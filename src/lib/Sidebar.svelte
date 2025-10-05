@@ -1,24 +1,25 @@
-<script>import { page } from '$app/stores'
+<script>
+  import { page } from '$app/stores'
 
   let pathname
   $: pathname = $page.url.pathname
 </script>
 
 <nav>
-  <ul class="flex flex-row flex-nowrap overflow-x-auto">
-    <li class="w-1/4 flex-shrink-0 text-center" class:active={pathname === '/works'}>
+  <ul>
+    <li class={pathname === '/works' ? 'active' : ''}>
       <a href="/works"><h2>works</h2></a>
     </li>
 
-    <li class="w-1/4 flex-shrink-0 text-center" class:active={pathname === '/about/tm'}>
+    <li class={pathname === '/about/tm' ? 'active' : ''}>
       <a href="/about/tm"><h2>bio/cv</h2></a>
     </li>
 
-    <li class="w-1/4 flex-shrink-0 text-center" class:active={pathname === '/about/sound'}>
+    <li class={pathname === '/about/sound' ? 'active' : ''}>
       <a href="/about/sound"><h2>sound</h2></a>
     </li>
 
-    <li class="w-1/4 flex-shrink-0 text-center" class:active={pathname === '/about/contact'}>
+    <li class={pathname === '/about/contact' ? 'active' : ''}>
       <a href="/about/contact"><h2>contact</h2></a>
     </li>
   </ul>
