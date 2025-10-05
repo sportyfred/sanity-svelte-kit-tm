@@ -6,20 +6,20 @@
 </script>
 
 <nav>
-  <ul>
-    <li class="w-1/4" class:active={pathname === '/works'}>
+  <ul class="flex flex-row flex-nowrap overflow-x-auto">
+    <li class="w-1/4 flex-shrink-0 text-center" class:active={pathname === '/works'}>
       <a href="/works"><h2>works</h2></a>
     </li>
 
-    <li class="w-1/4" class:active={pathname === '/about/tm'}>
+    <li class="w-1/4 flex-shrink-0 text-center" class:active={pathname === '/about/tm'}>
       <a href="/about/tm"><h2>bio/cv</h2></a>
     </li>
 
-    <li class="w-1/4" class:active={pathname === '/about/sound'}>
+    <li class="w-1/4 flex-shrink-0 text-center" class:active={pathname === '/about/sound'}>
       <a href="/about/sound"><h2>sound</h2></a>
     </li>
 
-    <li class="w-1/4" class:active={pathname === '/about/contact'}>
+    <li class="w-1/4 flex-shrink-0 text-center" class:active={pathname === '/about/contact'}>
       <a href="/about/contact"><h2>contact</h2></a>
     </li>
   </ul>
