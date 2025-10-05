@@ -13,10 +13,10 @@
 </script>
 
 <nav>
-  <ul class="flex w-full gap-x-1 sm:gap-x-4">
+  <ul class="flex w-full">
     {#each menuItems as item}
       <li class="flex-1 text-center" class:active={pathname === item.href}>
-        <a href={item.href} class="px-1 py-1 sm:px-2 sm:py-2">
+        <a href={item.href} class="block py-1 text-sm sm:text-base">
           <h2>{item.name}</h2>
         </a>
       </li>
@@ -34,10 +34,13 @@
   li a {
     display: block;
     text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   h2 {
     margin: 0;
+    font-size: inherit;
     background-repeat: repeat-x;
     background-size: 16px 18px;
     background-position: 2px 19px;
