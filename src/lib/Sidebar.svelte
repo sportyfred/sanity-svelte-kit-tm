@@ -7,19 +7,19 @@
 
 <nav>
   <ul>
-    <li class={pathname === '/works' ? 'active' : ''}>
+    <li class="w-1/4" class:active={pathname === '/works'}>
       <a href="/works"><h2>works</h2></a>
     </li>
 
-    <li class={pathname === '/about/tm' ? 'active' : ''}>
+    <li class="w-1/4" class:active={pathname === '/about/tm'}>
       <a href="/about/tm"><h2>bio/cv</h2></a>
     </li>
 
-    <li class={pathname === '/about/sound' ? 'active' : ''}>
+    <li class="w-1/4" class:active={pathname === '/about/sound'}>
       <a href="/about/sound"><h2>sound</h2></a>
     </li>
 
-    <li class={pathname === '/about/contact' ? 'active' : ''}>
+    <li class="w-1/4" class:active={pathname === '/about/contact'}>
       <a href="/about/contact"><h2>contact</h2></a>
     </li>
   </ul>
