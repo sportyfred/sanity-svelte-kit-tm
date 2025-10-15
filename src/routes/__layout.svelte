@@ -146,8 +146,8 @@ h5, h6 { text-transform: uppercase; }
 
 header h1 { border-bottom: 1px solid; }
 
-a,a:visited { color: var(--link-color); }
-a:hover,a:focus { color: var(--link-color-alt); }
+a { color: var(--link-color); }
+a:hover,a:focus, a:active { color: var(--link-color-alt); }
 
 strong, time, b { font-weight: bold; }
 em, dfn, i { font-style: italic; }
@@ -280,8 +280,8 @@ sup { font-size: 80%; vertical-align: top; }
     }
     table tbody tr:nth-child(even) { background: var(--secondary-color-d); }
 
-       a,a:visited { color: var(--link-color-d); }
-a:hover,a:focus { color: var(--link-color-alt-d); }
+       a { color: var(--link-color-d); }
+a:hover,a:focus, a:active { color: var(--link-color-alt-d); }
   
     
 }
