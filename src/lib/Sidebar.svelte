@@ -72,7 +72,7 @@ flex-wrap:wrap;
     animation-duration: 40s; /* subtle */
     text-decoration-line: underline;
     text-decoration-style: wavy;
-    text-decoration-color: currentColor;
+    
   }
 
   /* underline animation keyframes */
@@ -93,13 +93,14 @@ flex-wrap:wrap;
 
   /* Active link styling */
   li.active a {
-    color: currentColor;
+    
     font-weight: bold;
   }
 
   @media (prefers-color-scheme: dark) {
     li.active a {
-      color: currentColor;
+      
+      font-weight: bold;
     }
   }
 </style>
